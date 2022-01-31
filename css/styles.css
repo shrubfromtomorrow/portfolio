@@ -11,7 +11,7 @@
   top: 50%;
   left: 50%;
   margin-left: -45.5px;
-  margin-top: -160px;
+  margin-top: -200px;
 }
 #says{
   font-family: "Bebas Neue", cursive;
@@ -22,7 +22,7 @@
   top: 50%;
   left: 50%;
   margin-left: -14.5px;
-  margin-top: -100px;
+  margin-top: -140px;
 }
 #hello {
   font-family: "Bebas Neue", cursive;
@@ -33,7 +33,29 @@
   top: 50%;
   left: 50%;
   margin-left: -186.5px;
-  margin-top: -100px;
+  margin-top: -140px;
+}
+#and{
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: 60px;
+}
+#welcome {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  color: #81FBF2;
+  font-size: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -294.5px;
+  margin-top: 65px;
 }
 
 body{
