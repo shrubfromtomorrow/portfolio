@@ -2,60 +2,56 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("/home/orion/Code/Html/fonts/bebas-neue/BebasNeue-Bold.otf");
+}
+
 #name{
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
+  font-family: "Bebas Neue Bold";
   color: #81FBF2;
   font-size: 50px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -45.5px;
-  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
 }
 #says{
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
+  font-family: "Bebas Neue Bold";
   color: #FFFFFF;
   font-size: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -14.5px;
-  margin-top: -140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 #hello {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
+  font-family: "Bebas Neue Bold";
   color: #81FBF2;
   font-size: 200px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -186.5px;
-  margin-top: -140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 #and{
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
+  font-family: "Bebas Neue Bold";
   color: #FFFFFF;
   font-size: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -12px;
-  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
 }
 #welcome {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
+  font-family: "Bebas Neue Bold";
   color: #81FBF2;
   font-size: 200px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -294.5px;
-  margin-top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 body{
@@ -64,35 +60,69 @@ body{
 
 #nav{
   font-family: "Montserrat", sans-serif;
+  display: flex;
   font-weight: 400;
-  color: #81FBF2;
   font-size: 20px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 1%;
 }
 
-#test{
+#junior{
+  text-decoration: none;
+  color: #81FBF2;
   border: 1px solid #81FBF2;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
   padding-right: 8px;
+  transition: all 0.25s ease-out;
 }
-#test2{
+
+#junior:hover,
+#junior:focus{
+  border-radius: 15px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+#senior{
+  text-decoration: none;
+  color: #81FBF2;
   border: 1px solid #81FBF2;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
   padding-right: 8px;
+  transition: all 0.25s ease-out;
+}
+
+#senior:hover,
+#senior:focus{
+  border-radius: 15px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+#about{
+  text-decoration: none;
+  color: #81FBF2;
+  border: 1px solid #81FBF2;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all 0.25s ease-out;
   margin-left: 75px;
   margin-right: 75px;
 }
-#test3{
-  border: 1px solid #81FBF2;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
+
+#about:hover,
+#about:focus{
+  border-radius: 15px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
 
 
 /*
