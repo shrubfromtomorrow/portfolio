@@ -16,7 +16,14 @@
   align-items: center;
   justify-content: center;
   margin-top: 200px;
+  animation: fade 2s 1.45s ease forwards;
 }
+
+@keyframes fade {
+  from {opacity: 0%}
+  to {opacity: 100%}
+}
+
 #says{
   font-family: "Bebas Neue Bold";
   color: #FFFFFF;
@@ -25,6 +32,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  animation: fade 2s 1.5s ease forwards;
 }
 #hello {
   font-family: "Bebas Neue Bold";
@@ -34,6 +42,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  animation: fade 2s 1.55s ease forwards;
 }
 #and{
   font-family: "Bebas Neue Bold";
@@ -43,6 +52,7 @@
   align-items: center;
   justify-content: center;
   margin-top: -20px;
+  animation: fade 2s 1.6s ease forwards;
 }
 #welcome {
   font-family: "Bebas Neue Bold";
@@ -52,6 +62,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  animation: fade 2s 1.65s ease forwards;
 }
 
 body{
@@ -77,6 +88,7 @@ body{
   padding-left: 8px;
   padding-right: 8px;
   transition: all 0.25s ease-out;
+  animation: fade 2s 1s ease forwards;
 }
 
 #junior:hover,
@@ -95,6 +107,7 @@ body{
   padding-left: 8px;
   padding-right: 8px;
   transition: all 0.25s ease-out;
+  animation: fade 2s 1s ease forwards;
 }
 
 #senior:hover,
@@ -115,6 +128,7 @@ body{
   transition: all 0.25s ease-out;
   margin-left: 75px;
   margin-right: 75px;
+  animation: fade 2s 1s ease forwards;
 }
 
 #about:hover,
@@ -132,15 +146,61 @@ body{
   left: 0%;
   background-color: #0B0C10;
   z-index: 1;
-  animation: fade 2.5s ease forwards;
+  animation: slide 2.5s ease forwards;
 }
 
-@keyframes fade {
+@keyframes slide {
   0% {height: 99.8%;}
   25% {height: 99.8%;}
   50% {height: 99.8%;}
   98% {height: 0%; border-top: 2px solid white;}
   100% {height: 0%}
+}
+
+.sidebarleft {
+  height: 99.5%; /* Full-height: remove this if you want "auto" height */
+  width: 10%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0B0C10; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border: 1px solid #81FBF2;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarright {
+  height: 99.5%; /* Full-height: remove this if you want "auto" height */
+  width: 10%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #0B0C10; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border: 1px solid #81FBF2;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#testleft{
+  padding-top: 10px;
+  color: white;
+}
+
+#testright{
+  padding-top: 10px;
+  color: white;
 }
 
 /*
