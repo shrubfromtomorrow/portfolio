@@ -157,51 +157,61 @@ body{
   100% {height: 0%}
 }
 
-.sidebarleft {
-  height: 99.5%; /* Full-height: remove this if you want "auto" height */
-  width: 10%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 0; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #0B0C10; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+.menubtn {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 40px;
   border: 1px solid #81FBF2;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  justify-content: center;
   align-items: center;
-}
-
-.sidebarright {
-  height: 99.5%; /* Full-height: remove this if you want "auto" height */
-  width: 10%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 0; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #0B0C10; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  border: 1px solid #81FBF2;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
   justify-content: center;
-  align-items: center;
+  transition: all 0.25s ease-out;
 }
 
-#testleft{
-  padding-top: 10px;
-  color: white;
+.menubtn:hover {
+  border-radius: 25px;
 }
 
-#testright{
-  padding-top: 10px;
-  color: white;
+.menubtnburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2.5px;
+  transition: all 0.5s ease-in-out;
 }
+
+.menubtnburger::before,
+.menubtnburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2.5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menubtnburger::before {
+  transform: translateY(-8px);
+}
+
+.menubtnburger::after {
+  transform: translateY(8px);
+}
+
+.menubtn.open .menubtnburger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menubtn.open .menubtnburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menubtn.open .menubtnburger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
 
 /*
 Black: #0B0C10

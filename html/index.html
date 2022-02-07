@@ -13,8 +13,9 @@
   <body>
     <div class="load">
     </div>
-    <div class="sidebarleft">
-      <p id="testleft">Test</p>
+    <div class="menubtn">
+      <div class="menubtnburger">
+      </div>
     </div>
     <div id="nav">
       <a href="301/301home.html" id="junior">Junior</a>
@@ -28,5 +29,19 @@
         <h1 id="and">and</h1>
         <h1 id="welcome">WELCOME</h1>
     </div>
+    <script>
+      const menuBtn = document.querySelector(".menubtn");
+      let menuOpen = false;
+      menuBtn.addEventListener('click', () => {
+        if(!menuOpen) {
+          menuBtn.classList.add('open');
+          menuOpen = true;
+        }
+        else {
+          menuBtn.classList.remove('open');
+          menuOpen = false;
+        }
+      });
+    </script>
   </body>
 </html>
