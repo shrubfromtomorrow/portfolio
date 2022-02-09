@@ -11,16 +11,22 @@
     <title>Porfolio</title>
   </head>
   <body>
+    <div id="nav">
+      <a href="301/301home.html" id="junior">Junior</a>
+      <a href="about.html" id="about">About</a>
+      <a href="401/401home.html" id="senior">Senior</a>
+    </div>
     <div class="load">
     </div>
     <div class="menubtn">
       <div class="menubtnburger">
       </div>
     </div>
-    <div id="nav">
-      <a href="301/301home.html" id="junior">Junior</a>
-      <a href="about.html" id="about">About</a>
-      <a href="401/401home.html" id="senior">Senior</a>
+    <div class="dropdown">
+      <div class="dropdown-content">
+        <a href="#">Junior</a>
+        <a href="#">Senior</a>
+      </div>
     </div>
       <div>
         <h1 id="name">ORION</h1>
@@ -40,6 +46,18 @@
         else {
           menuBtn.classList.remove('open');
           menuOpen = false;
+        }
+      });
+      const dropDown = document.querySelector(".dropdown");
+      let dropDownOpen = false;
+      menuBtn.addEventListener('click', () => {
+        if(!dropDownOpen) {
+          dropDown.classList.add('open');
+          dropDownOpen = true;
+        }
+        else {
+          dropDown.classList.remove('open');
+          dropDownOpen = false;
         }
       });
     </script>
