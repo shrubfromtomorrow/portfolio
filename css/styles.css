@@ -247,7 +247,8 @@ body{
   padding: 15px;
   list-style: none;
   padding-top: 10px;
-  text-align: center;
+  text-align: left;
+  justify-content: left;
 }
 
 #seniorLinkList, #juniorLinkList {
@@ -260,7 +261,7 @@ body{
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
   transition: all 0.5s ease;
@@ -276,15 +277,14 @@ body{
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
   transition: all 0.5s ease;
 }
 
-
-
 #seniorLink, #juniorLink, #test {
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #81FBF2;
@@ -293,17 +293,37 @@ body{
   padding: 15px;
 }
 
+#juniorLinkList::after, #seniorLinkList::after {
+  cursor: hand;
+  content: '';
+  margin-top: 10.5px;
+  position: absolute;
+  width: 10px;
+  height: 1.5px;
+  background: white;
+  border-radius: 2.5px;
+  transition: all 0.5s ease;
+}
+
+#juniorLink::after, #seniorLink::after {
+  content: '';
+  margin-top: 6.4px;
+  margin-left: 19.4px;
+  position: absolute;
+  width: 1.5px;
+  height: 10px;
+  background: white;
+  border-radius: 2.5px;
+  transition: all 0.5s ease;
+}
+
+
 #seniorLink:visited, #juniorLink:visited, #test:visited {
   font-family: "Montserrat", sans-serif;
   color: #81FBF2;
   text-decoration: none;
 }
 
-#seniorLinkList:hover, #juniorLinkList:hover, #collapsibleList:hover {
-  background: rgba(197, 198, 199, 50%);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
 
 
 
