@@ -10,6 +10,7 @@
 
 #name{
   font-family: "Bebas Neue Bold";
+  pointer-events: none;
   color: #81FBF2;
   font-size: 50px;
   display: flex;
@@ -26,6 +27,7 @@
 
 #says{
   font-family: "Bebas Neue Bold";
+  pointer-events: none;
   color: #FFFFFF;
   font-size: 20px;
   display: flex;
@@ -36,6 +38,7 @@
 }
 #hello {
   font-family: "Bebas Neue Bold";
+  pointer-events: none;
   color: #81FBF2;
   font-size: 200px;
   display: flex;
@@ -46,6 +49,7 @@
 }
 #and{
   font-family: "Bebas Neue Bold";
+  pointer-events: none;
   color: #FFFFFF;
   font-size: 20px;
   display: flex;
@@ -56,6 +60,7 @@
 }
 #welcome {
   font-family: "Bebas Neue Bold";
+  pointer-events: none;
   color: #81FBF2;
   font-size: 200px;
   display: flex;
@@ -66,7 +71,13 @@
 }
 
 body{
-  background-color: #0D0221;
+  background-image: linear-gradient(to top left, #FF3366 0%, #0D0221 60%);
+}
+/* circle at 80%, #FF3366, #0D0221 */
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 #nav{
@@ -254,9 +265,9 @@ body{
 #seniorLinkList, #juniorLinkList {
   display: block;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   text-decoration: none;
   color: #81FBF2;
-  font-weight: 400;
   font-size: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -264,7 +275,6 @@ body{
   padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
-  transition: all 0.5s ease;
 }
 
 #collapsibleList {
@@ -280,7 +290,6 @@ body{
   padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
-  transition: all 0.5s ease;
 }
 
 #seniorLink, #juniorLink, #test {
@@ -293,10 +302,11 @@ body{
   padding: 15px;
 }
 
-#juniorLinkList::after, #seniorLinkList::after {
-  cursor: hand;
+#horizPlus {
+  display:inline-block;
+  cursor: pointer;
   content: '';
-  margin-top: 10.5px;
+  margin-top: 11px;
   position: absolute;
   width: 10px;
   height: 1.5px;
@@ -305,16 +315,17 @@ body{
   transition: all 0.5s ease;
 }
 
-#juniorLink::after, #seniorLink::after {
+#vertPlus {
+  display:inline-block;
+  cursor: pointer;
   content: '';
-  margin-top: 6.4px;
-  margin-left: 19.4px;
   position: absolute;
   width: 1.5px;
+  margin-left: 4px;
+  margin-top: 6.99px;
   height: 10px;
   background: white;
   border-radius: 2.5px;
-  transition: all 0.5s ease;
 }
 
 

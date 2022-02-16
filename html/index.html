@@ -25,8 +25,8 @@
     <div class="dropdown">
       <div class="dropdown-content">
         <ul class="dropdownLinks">
-          <li id="juniorLinkList"><a id="juniorLink" href="#">Junior</a></li>
-          <li id="collapsibleList"><a id="test" href="#">test</a></li>
+          <li id="juniorLinkList"><a id="juniorLink" href="#">Junior</a><div id="horizPlus"></div><div id="vertPlus"></div></li>
+          <li id="collapsibleList"><a id="test" href="#">Home</a></li>
           <li id="seniorLinkList"><a id="seniorLink" href="#">Senior</a></li>
         </ul class="drowdownLinks">
       </div>
@@ -65,17 +65,20 @@
       });
       const juniorLinkList = document.querySelector("#juniorLinkList");
       const collapsibleList = document.querySelector("#collapsibleList");
+      const vertPlus = document.querySelector("#vertPlus")
       let juniorLinkListOpen = false;
       juniorLinkList.addEventListener('click', () => {
         if(!juniorLinkListOpen) {
           juniorLinkList.classList.add('open');
           juniorLinkListOpen = true;
           collapsibleList.style.display = "block";
+          vertPlus.style.opacity = "0";
         }
         else {
           juniorLinkList.classList.remove('open');
           juniorLinkListOpen = false;
           collapsibleList.style.display = "none";
+          vertPlus.style.opacity = "1";
         }
       });
     </script>
