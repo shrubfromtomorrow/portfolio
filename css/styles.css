@@ -8,6 +8,26 @@
   src: url("/home/orion/Code/Html/fonts/bebas-neue/BebasNeue-Bold.otf");
 }
 
+@font-face {
+  font-family: "Montserratreg";
+  src: url("/home/orion/Code/Html/fonts/montserrat/Montserrat-Regular.otf");
+}
+
+@font-face {
+  font-family: "Montserratthin";
+  src: url("/home/orion/Code/Html/fonts/montserrat/Montserrat-Thin.otf");
+}
+
+@font-face {
+  font-family: "Montserratsemibold";
+  src: url("/home/orion/Code/Html/fonts/montserrat/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Montserratmed";
+  src: url("/home/orion/Code/Html/fonts/montserrat/Montserrat-Medium.otf");
+}
+
 #name{
   font-family: "Bebas Neue Bold";
   pointer-events: none;
@@ -71,7 +91,7 @@
 }
 
 body{
-  background-image: linear-gradient(to top left, #FF3366 0%, #0D0221 60%);
+  background: #0D0221;
 }
 /* circle at 80%, #FF3366, #0D0221 */
 html, body {
@@ -81,7 +101,7 @@ html, body {
 }
 
 #nav{
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserratmed", sans-serif;
   display: flex;
   font-weight: 400;
   font-size: 20px;
@@ -264,7 +284,7 @@ html, body {
 
 #seniorLinkList, #juniorLinkList {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserratmed";
   font-weight: 400;
   text-decoration: none;
   color: #81FBF2;
@@ -277,14 +297,14 @@ html, body {
   background: rgba(197, 198, 199, 0%);
 }
 
-#collapsibleList {
+.juniorCollapsible {
   display: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserratmed", sans-serif;
   text-decoration: none;
   color: #81FBF2;
   font-weight: 400;
-  font-size: 20px;
-  padding-top: 15px;
+  font-size: 15px;
+  padding-top: 0px;
   padding-bottom: 15px;
   padding-right: 50px;
   padding-left: 40px;
@@ -292,9 +312,15 @@ html, body {
   background: rgba(197, 198, 199, 0%);
 }
 
-#seniorLink, #juniorLink, #test {
+#juniorHome, #juniorInternships, #juniorLevelupreqs, #juniorWriting, #juniorExhibitions, #juniorProjects {
+  text-indent: 10px;
+  text-decoration: none;
+  color: #81FBF2;
+}
+
+#seniorLink, #juniorLink {
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserratmed", sans-serif;
   text-decoration: none;
   color: #81FBF2;
   font-weight: 400;
@@ -330,7 +356,7 @@ html, body {
 
 
 #seniorLink:visited, #juniorLink:visited, #test:visited {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserratmed", sans-serif;
   color: #81FBF2;
   text-decoration: none;
 }

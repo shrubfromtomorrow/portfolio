@@ -7,7 +7,10 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,400;0,800;0,900;1,700&display=swap" rel="stylesheet"/> -->
-    <link rel="stylesheet" href="/home/orion/Code/Html/portfolio/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="/home/orion/Code/Html/portfolio/css/styles.css"
+    />
     <title>Porfolio</title>
   </head>
   <body>
@@ -16,66 +19,84 @@
       <a href="about.html" id="about">About</a>
       <a href="401/401home.html" id="senior">Senior</a>
     </div>
-    <div class="load">
-    </div>
+    <div class="load"></div>
     <div class="menubtn">
-      <div class="menubtnburger">
-      </div>
+      <div class="menubtnburger"></div>
     </div>
     <div class="dropdown">
       <div class="dropdown-content">
         <ul class="dropdownLinks">
-          <li id="juniorLinkList"><a id="juniorLink" href="#">Junior</a><div id="horizPlus"></div><div id="vertPlus"></div></li>
-          <li id="collapsibleList"><a id="test" href="#">Home</a></li>
-          <li id="seniorLinkList"><a id="seniorLink" href="#">Senior</a></li>
-        </ul class="drowdownLinks">
+          <li id="juniorLinkList">
+            <a id="juniorLink" href="#">Junior</a>
+            <div id="horizPlus"></div>
+            <div id="vertPlus"></div>
+          </li>
+          <ul class="juniorCollapsible">
+            <li>
+              <a id="juniorHome" href="#">Home</a>
+            </li>
+            <li>
+              <a id="juniorInternships" href="#">Internships</a>
+            </li>
+            <li>
+              <a id="juniorLevelupreqs" href="#">LevelUp Requirements</a>
+            </li>
+            <li>
+              <a id="juniorWriting" href="#">Writing</a>
+            </li>
+            <li>
+              <a id="juniorExhibitions" href="#">Exhibitions</a>
+            </li>
+            <li>
+              <a id="juniorProjects" href="#">Projects</a>
+            </li>
+          </ul>
+          <li class="seniorLinkList"><a id="seniorLink" href="#">Senior</a></li>
+        </ul>
       </div>
     </div>
-      <div>
-        <h1 id="name">ORION</h1>
-        <h1 id="says">says</h1>
-        <h1 id="hello">HELLO</h1>
-        <h1 id="and">and</h1>
-        <h1 id="welcome">WELCOME</h1>
+    <div>
+      <h1 id="name">ORION</h1>
+      <h1 id="says">says</h1>
+      <h1 id="hello">HELLO</h1>
+      <h1 id="and">and</h1>
+      <h1 id="welcome">WELCOME</h1>
     </div>
     <script>
       const menuBtn = document.querySelector(".menubtn");
       let menuOpen = false;
-      menuBtn.addEventListener('click', () => {
-        if(!menuOpen) {
-          menuBtn.classList.add('open');
+      menuBtn.addEventListener("click", () => {
+        if (!menuOpen) {
+          menuBtn.classList.add("open");
           menuOpen = true;
-        }
-        else {
-          menuBtn.classList.remove('open');
+        } else {
+          menuBtn.classList.remove("open");
           menuOpen = false;
         }
       });
       const dropDown = document.querySelector(".dropdown");
       let dropDownOpen = false;
-      menuBtn.addEventListener('click', () => {
-        if(!dropDownOpen) {
-          dropDown.classList.add('open');
+      menuBtn.addEventListener("click", () => {
+        if (!dropDownOpen) {
+          dropDown.classList.add("open");
           dropDownOpen = true;
-        }
-        else {
-          dropDown.classList.remove('open');
+        } else {
+          dropDown.classList.remove("open");
           dropDownOpen = false;
         }
       });
       const juniorLinkList = document.querySelector("#juniorLinkList");
-      const collapsibleList = document.querySelector("#collapsibleList");
-      const vertPlus = document.querySelector("#vertPlus")
+      const collapsibleList = document.querySelector(".juniorCollapsible");
+      const vertPlus = document.querySelector("#vertPlus");
       let juniorLinkListOpen = false;
-      juniorLinkList.addEventListener('click', () => {
-        if(!juniorLinkListOpen) {
-          juniorLinkList.classList.add('open');
+      juniorLinkList.addEventListener("click", () => {
+        if (!juniorLinkListOpen) {
+          juniorLinkList.classList.add("open");
           juniorLinkListOpen = true;
           collapsibleList.style.display = "block";
           vertPlus.style.opacity = "0";
-        }
-        else {
-          juniorLinkList.classList.remove('open');
+        } else {
+          juniorLinkList.classList.remove("open");
           juniorLinkListOpen = false;
           collapsibleList.style.display = "none";
           vertPlus.style.opacity = "1";
