@@ -28,8 +28,8 @@
         <ul class="dropdownLinks">
           <li id="juniorLinkList">
             <a id="juniorLink" href="#">Junior</a>
-            <div id="horizPlus"></div>
-            <div id="vertPlus"></div>
+            <div id="horizPlusjun"></div>
+            <div id="vertPlusjun"></div>
           </li>
           <ul class="juniorCollapsible">
             <li>
@@ -39,7 +39,7 @@
               <a id="juniorInternships" href="#">Internships</a>
             </li>
             <li>
-              <a id="juniorLevelupreqs" href="#">LevelUp Requirements</a>
+              <a id="juniorLevelupreqs" href="#">LevelUp</a>
             </li>
             <li>
               <a id="juniorWriting" href="#">Writing</a>
@@ -51,7 +51,31 @@
               <a id="juniorProjects" href="#">Projects</a>
             </li>
           </ul>
-          <li class="seniorLinkList"><a id="seniorLink" href="#">Senior</a></li>
+          <li id="seniorLinkList">
+            <a id="seniorLink" href="#">Senior</a>
+            <div id="horizPlussen"></div>
+            <div id="vertPlussen"></div>
+          </li>
+          <ul class="seniorCollapsible">
+            <li>
+              <a id="seniorHome" href="#">Home</a>
+            </li>
+            <li>
+              <a id="seniorInternships" href="#">Internships</a>
+            </li>
+            <li>
+              <a id="seniorLevelupreqs" href="#">LevelUp</a>
+            </li>
+            <li>
+              <a id="seniorWriting" href="#">Writing</a>
+            </li>
+            <li>
+              <a id="seniorExhibitions" href="#">Exhibitions</a>
+            </li>
+            <li>
+              <a id="seniorProjects" href="#">Projects</a>
+            </li>
+          </ul>
         </ul>
       </div>
     </div>
@@ -86,20 +110,37 @@
         }
       });
       const juniorLinkList = document.querySelector("#juniorLinkList");
-      const collapsibleList = document.querySelector(".juniorCollapsible");
-      const vertPlus = document.querySelector("#vertPlus");
+      const juniorCollapsible = document.querySelector(".juniorCollapsible");
+      const vertPlusjun = document.querySelector("#vertPlusjun");
       let juniorLinkListOpen = false;
       juniorLinkList.addEventListener("click", () => {
         if (!juniorLinkListOpen) {
           juniorLinkList.classList.add("open");
           juniorLinkListOpen = true;
-          collapsibleList.style.display = "block";
-          vertPlus.style.opacity = "0";
+          juniorCollapsible.style.display = "block";
+          vertPlusjun.style.opacity = "0";
         } else {
           juniorLinkList.classList.remove("open");
           juniorLinkListOpen = false;
-          collapsibleList.style.display = "none";
-          vertPlus.style.opacity = "1";
+          juniorCollapsible.style.display = "none";
+          vertPlusjun.style.opacity = "1";
+        }
+      });
+      const seniorLinkList = document.querySelector("#seniorLinkList");
+      const seniorCollapsible = document.querySelector(".seniorCollapsible");
+      const vertPlussen = document.querySelector("#vertPlussen");
+      let seniorLinkListOpen = false;
+      seniorLinkList.addEventListener("click", () => {
+        if (!seniorLinkListOpen) {
+          seniorLinkList.classList.add("open");
+          seniorLinkListOpen = true;
+          seniorCollapsible.style.display = "block";
+          vertPlussen.style.opacity = "0";
+        } else {
+          seniorLinkList.classList.remove("open");
+          seniorLinkListOpen = false;
+          seniorCollapsible.style.display = "none";
+          vertPlussen.style.opacity = "1";
         }
       });
     </script>

@@ -28,10 +28,10 @@
   src: url("/home/orion/Code/Html/fonts/montserrat/Montserrat-Medium.otf");
 }
 
-#name{
+#name {
   font-family: "Bebas Neue Bold";
   pointer-events: none;
-  color: #81FBF2;
+  color: #81fbf2;
   font-size: 50px;
   display: flex;
   align-items: center;
@@ -41,14 +41,18 @@
 }
 
 @keyframes fade {
-  from {opacity: 0%}
-  to {opacity: 100%}
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
-#says{
+#says {
   font-family: "Bebas Neue Bold";
   pointer-events: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -59,7 +63,7 @@
 #hello {
   font-family: "Bebas Neue Bold";
   pointer-events: none;
-  color: #81FBF2;
+  color: #81fbf2;
   font-size: 200px;
   display: flex;
   align-items: center;
@@ -67,10 +71,10 @@
   margin-top: 10px;
   animation: fade 2s 1.55s ease forwards;
 }
-#and{
+#and {
   font-family: "Bebas Neue Bold";
   pointer-events: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -81,7 +85,7 @@
 #welcome {
   font-family: "Bebas Neue Bold";
   pointer-events: none;
-  color: #81FBF2;
+  color: #81fbf2;
   font-size: 200px;
   display: flex;
   align-items: center;
@@ -90,17 +94,18 @@
   animation: fade 2s 1.65s ease forwards;
 }
 
-body{
-  background: #0D0221;
+body {
+  background: #0d0221;
 }
 /* circle at 80%, #FF3366, #0D0221 */
-html, body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-#nav{
+#nav {
   font-family: "Montserratmed", sans-serif;
   display: flex;
   font-weight: 400;
@@ -110,10 +115,10 @@ html, body {
   margin-top: 1%;
 }
 
-#junior{
+#junior {
   text-decoration: none;
-  color: #81FBF2;
-  border: 1px solid #81FBF2;
+  color: #81fbf2;
+  border: 1px solid #81fbf2;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
@@ -123,16 +128,16 @@ html, body {
 }
 
 #junior:hover,
-#junior:focus{
+#junior:focus {
   border-radius: 15px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 
-#senior{
+#senior {
   text-decoration: none;
-  color: #81FBF2;
-  border: 1px solid #81FBF2;
+  color: #81fbf2;
+  border: 1px solid #81fbf2;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
@@ -142,16 +147,16 @@ html, body {
 }
 
 #senior:hover,
-#senior:focus{
+#senior:focus {
   border-radius: 15px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 
-#about{
+#about {
   text-decoration: none;
-  color: #81FBF2;
-  border: 1px solid #81FBF2;
+  color: #81fbf2;
+  border: 1px solid #81fbf2;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
@@ -163,29 +168,40 @@ html, body {
 }
 
 #about:hover,
-#about:focus{
+#about:focus {
   border-radius: 15px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 
-.load{
+.load {
   width: 100%;
   height: 100%;
   position: absolute;
   bottom: 0%;
   left: 0%;
-  background-color: #0D0221;
+  background-color: #0d0221;
   z-index: 1;
   animation: slide 2.5s ease forwards;
 }
 
 @keyframes slide {
-  0% {height: 99.8%;}
-  25% {height: 99.8%;}
-  50% {height: 99.8%;}
-  98% {height: 0%; border-top: 2px solid #81FBF2;}
-  100% {height: 0%}
+  0% {
+    height: 99.8%;
+  }
+  25% {
+    height: 99.8%;
+  }
+  50% {
+    height: 99.8%;
+  }
+  98% {
+    height: 0%;
+    border-top: 2px solid #81fbf2;
+  }
+  100% {
+    height: 0%;
+  }
 }
 
 .menubtn {
@@ -193,7 +209,7 @@ html, body {
   display: flex;
   width: 40px;
   height: 40px;
-  border: 1px solid #81FBF2;
+  border: 1px solid #81fbf2;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
@@ -215,7 +231,7 @@ html, body {
 
 .menubtnburger::before,
 .menubtnburger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 3px;
@@ -282,12 +298,13 @@ html, body {
   justify-content: left;
 }
 
-#seniorLinkList, #juniorLinkList {
+#seniorLinkList,
+#juniorLinkList {
   display: block;
   font-family: "Montserratmed";
   font-weight: 400;
   text-decoration: none;
-  color: #81FBF2;
+  color: #81fbf2;
   font-size: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -298,10 +315,11 @@ html, body {
 }
 
 .juniorCollapsible {
+  list-style-type: none;
   display: none;
   font-family: "Montserratmed", sans-serif;
   text-decoration: none;
-  color: #81FBF2;
+  color: #81fbf2;
   font-weight: 400;
   font-size: 15px;
   padding-top: 0px;
@@ -310,29 +328,84 @@ html, body {
   padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
+  line-height: 2;
 }
 
-#juniorHome, #juniorInternships, #juniorLevelupreqs, #juniorWriting, #juniorExhibitions, #juniorProjects {
+.seniorCollapsible {
+  list-style-type: none;
+  display: none;
+  font-family: "Montserratmed", sans-serif;
+  text-decoration: none;
+  color: #81fbf2;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  padding-right: 50px;
+  padding-left: 40px;
+  width: 100px;
+  background: rgba(197, 198, 199, 0%);
+  line-height: 2;
+}
+
+#juniorHome,
+#juniorInternships,
+#juniorLevelupreqs,
+#juniorWriting,
+#juniorExhibitions,
+#juniorProjects {
+  text-decoration: none;
+  color: #81fbf2;
+}
+
+#juniorHome:hover,
+#juniorInternships:hover,
+#juniorLevelupreqs:hover,
+#juniorWriting:hover,
+#juniorExhibitions:hover,
+#juniorProjects:hover {
+  text-decoration: underline;
+  color: #81fbf2;
+}
+
+#seniorHome,
+#seniorInternships,
+#seniorLevelupreqs,
+#seniorWriting,
+#seniorExhibitions,
+#seniorProjects {
   text-indent: 10px;
   text-decoration: none;
-  color: #81FBF2;
+  color: #81fbf2;
 }
 
-#seniorLink, #juniorLink {
+#seniorHome:hover,
+#seniorInternships:hover,
+#seniorLevelupreqs:hover,
+#seniorWriting:hover,
+#seniorExhibitions:hover,
+#seniorProjects:hover {
+  text-indent: 10px;
+  text-decoration: underline;
+  color: #81fbf2;
+}
+
+#seniorLink,
+#juniorLink {
   text-align: left;
   font-family: "Montserratmed", sans-serif;
   text-decoration: none;
-  color: #81FBF2;
+  color: #81fbf2;
   font-weight: 400;
   font-size: 20px;
   padding: 15px;
 }
 
-#horizPlus {
-  display:inline-block;
+#horizPlusjun {
+  display: inline-block;
   cursor: pointer;
-  content: '';
-  margin-top: 11px;
+  content: "";
+  margin-top: 12.2px;
   position: absolute;
   width: 10px;
   height: 1.5px;
@@ -341,28 +414,52 @@ html, body {
   transition: all 0.5s ease;
 }
 
-#vertPlus {
-  display:inline-block;
+#vertPlusjun {
+  display: inline-block;
   cursor: pointer;
-  content: '';
+  content: "";
   position: absolute;
   width: 1.5px;
   margin-left: 4px;
-  margin-top: 6.99px;
+  margin-top: 8px;
   height: 10px;
   background: white;
   border-radius: 2.5px;
 }
 
-
-#seniorLink:visited, #juniorLink:visited, #test:visited {
-  font-family: "Montserratmed", sans-serif;
-  color: #81FBF2;
-  text-decoration: none;
+#horizPlussen {
+  display: inline-block;
+  cursor: pointer;
+  content: "";
+  margin-top: 12.2px;
+  position: absolute;
+  width: 10px;
+  height: 1.5px;
+  background: white;
+  border-radius: 2.5px;
+  transition: all 0.5s ease;
 }
 
+#vertPlussen {
+  display: inline-block;
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  width: 1.5px;
+  margin-left: 4px;
+  margin-top: 8px;
+  height: 10px;
+  background: white;
+  border-radius: 2.5px;
+}
 
-
+#seniorLink:visited,
+#juniorLink:visited,
+#test:visited {
+  font-family: "Montserratmed", sans-serif;
+  color: #81fbf2;
+  text-decoration: none;
+}
 
 /*
 Red: #FF3366
