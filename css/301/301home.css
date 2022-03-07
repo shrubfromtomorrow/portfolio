@@ -1,13 +1,116 @@
-.title{
-  font-family: "Roboto";
-  font-weight: 100;
-}
-.home{
-  font-family: "Roboto";
-  font-weight: 900;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.homepagelink{
-  font-family: "Roboto";
-  font-weight: 900;
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("/home/orion/Code/Html/fonts/bebas-neue/BebasNeue-Bold.otf");
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0D0221;
+  overflow: hidden;
+}
+
+#nav {
+  font-family: "Montserratsemibold", sans-serif;
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+#home {
+  text-decoration: none;
+  color: #FF3366;
+  border: 1px solid #FF3366;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all 0.5s ease;
+}
+
+#home:hover,
+#home:focus {
+  border-radius: 15px;
+  text-decoration: underline;
+  border-color: #81FBF2;
+  color: #81FBF2;
+  text-decoration-thickness: 1px;
+}
+
+#senior {
+  text-decoration: none;
+  color: #FF3366;
+  border: 1px solid #FF3366;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all 0.5s ease;
+}
+
+#senior:hover,
+#senior:focus {
+  border-radius: 15px;
+  border-color: #FEC9F1;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: #FEC9F1;
+}
+
+#about {
+  text-decoration: none;
+  color: #FF3366;
+  border: 1px solid #FF3366;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all 0.5s ease;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+#about:hover,
+#about:focus {
+  border-radius: 15px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 95vh;
+  font-family: "Bebas Neue Bold";
+  font-size: 200px;
+  color: #FF3366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Red: #FF3366
+Pink: #FEC9F1
+Black: #0D0221
+Light blue: #81FBF2
+Dark Grey: #696773
+*/
