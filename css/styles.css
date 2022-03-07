@@ -131,6 +131,8 @@ body {
 #junior:focus {
   border-radius: 15px;
   text-decoration: underline;
+  border-color: #FF3366;
+  color: #FF3366;
   text-decoration-thickness: 1px;
 }
 
@@ -149,8 +151,10 @@ body {
 #senior:hover,
 #senior:focus {
   border-radius: 15px;
+  border-color: #FEC9F1;
   text-decoration: underline;
   text-decoration-thickness: 1px;
+  color: #FEC9F1;
 }
 
 #about {
@@ -329,6 +333,7 @@ body {
   width: 100px;
   background: rgba(197, 198, 199, 0%);
   line-height: 2;
+  transition: all 0.5s ease;
 }
 
 .seniorCollapsible {
@@ -346,6 +351,7 @@ body {
   width: 100px;
   background: rgba(197, 198, 199, 0%);
   line-height: 2;
+  transition: all 0.5s ease;
 }
 
 #juniorHome,
@@ -355,7 +361,7 @@ body {
 #juniorExhibitions,
 #juniorProjects {
   text-decoration: none;
-
+  transition: all 0.5s ease;
   color: #81fbf2;
 }
 
@@ -366,8 +372,9 @@ body {
 #juniorExhibitions:hover,
 #juniorProjects:hover {
   text-decoration: underline;
+  transition: all 0.5s ease;
   text-decoration-thickness: 1px;
-  color: #81fbf2;
+  color: #FF3366;
 }
 
 #seniorHome,
@@ -378,6 +385,7 @@ body {
 #seniorProjects {
   text-indent: 10px;
   text-decoration: none;
+  transition: all 0.5s ease;
   color: #81fbf2;
 }
 
@@ -390,15 +398,25 @@ body {
   text-indent: 10px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  color: #81fbf2;
+  transition: all 0.5s ease;
+  color: #FEC9F1;
 }
 
-#seniorLink,
+#seniorLink {
+  text-align: left;
+  font-family: "Montserratsemibold", sans-serif;
+  text-decoration: none;
+  color: #FEC9F1;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px;
+}
+
 #juniorLink {
   text-align: left;
   font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
-  color: #81fbf2;
+  color: #FF3366;
   font-weight: 400;
   font-size: 20px;
   padding: 15px;
@@ -456,19 +474,22 @@ body {
   border-radius: 2.5px;
 }
 
-#seniorLink:visited,
-#juniorLink:visited,
-#test:visited {
+#seniorLink:visited {
   font-family: "Montserratsemibold", sans-serif;
-  color: #81fbf2;
+  color: #81FBF2;
+  text-decoration: none;
+}
+
+#juniorLink:visited {
+  font-family: "Montserratsemibold", sans-serif;
+  color: #81FBF2;
   text-decoration: none;
 }
 
 /*
 Red: #FF3366
-Black: #0B0C10
-Dark Blue: #0D0221
-Grey: #C5C6C7
+Pink: #FEC9F1
+Black: #0D02219
 Light blue: #81FBF2
 Dark Grey: #696773
 */
