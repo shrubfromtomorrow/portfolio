@@ -106,7 +106,7 @@ body {
 }
 
 #nav {
-  font-family: "Montserratmed", sans-serif;
+  font-family: "Montserratsemibold", sans-serif;
   display: flex;
   font-weight: 400;
   font-size: 20px;
@@ -301,7 +301,7 @@ body {
 #seniorLinkList,
 #juniorLinkList {
   display: block;
-  font-family: "Montserratmed";
+  font-family: "Montserratsemibold";
   font-weight: 400;
   text-decoration: none;
   color: #81fbf2;
@@ -355,6 +355,7 @@ body {
 #juniorExhibitions,
 #juniorProjects {
   text-decoration: none;
+
   color: #81fbf2;
 }
 
@@ -365,6 +366,7 @@ body {
 #juniorExhibitions:hover,
 #juniorProjects:hover {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
   color: #81fbf2;
 }
 
@@ -387,13 +389,14 @@ body {
 #seniorProjects:hover {
   text-indent: 10px;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
   color: #81fbf2;
 }
 
 #seniorLink,
 #juniorLink {
   text-align: left;
-  font-family: "Montserratmed", sans-serif;
+  font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
   color: #81fbf2;
   font-weight: 400;
@@ -456,7 +459,7 @@ body {
 #seniorLink:visited,
 #juniorLink:visited,
 #test:visited {
-  font-family: "Montserratmed", sans-serif;
+  font-family: "Montserratsemibold", sans-serif;
   color: #81fbf2;
   text-decoration: none;
 }
