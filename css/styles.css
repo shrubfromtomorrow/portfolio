@@ -100,8 +100,9 @@ body {
 /* circle at 80%, #FF3366, #0D0221 */
 html,
 body {
-  margin: 0;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0D0221;
   overflow: hidden;
 }
 
@@ -112,7 +113,7 @@ body {
   font-size: 20px;
   justify-content: center;
   align-items: center;
-  margin-top: 1%;
+  margin-top: 2vh;
 }
 
 #junior {
