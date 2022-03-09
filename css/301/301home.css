@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "Bebas Neue Bold";
-  src: url("file:///home/orion/Code/Html/fonts/bebas-neue/BebasNeue-Bold.otf");
+  src: url("../../fonts/bebas-neue/BebasNeue-Bold.otf");
 }
 
 @font-face {
   font-family: "Montserratsemibold";
-  src: url("file:///home/orion/Code/Html/fonts/montserrat/Montserrat-SemiBold.otf");
+  src: url("../../fonts/montserrat/Montserrat-SemiBold.otf");
 }
 
 body{
@@ -259,7 +259,7 @@ body{
 .juniorCollapsible {
   list-style-type: none;
   display: none;
-  font-family: "Montserratmed", sans-serif;
+  font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
   color: #FF3366;
   font-weight: 400;
@@ -277,7 +277,7 @@ body{
 .seniorCollapsible {
   list-style-type: none;
   display: none;
-  font-family: "Montserratmed", sans-serif;
+  font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
   color: #FF3366;
   font-weight: 400;
@@ -312,7 +312,7 @@ body{
   text-decoration: underline;
   transition: all 0.5s ease;
   text-decoration-thickness: 1px;
-  color: #FEC9F1;
+  color: #FF3366;
 }
 
 #seniorHome,
