@@ -9,23 +9,46 @@
 }
 
 @font-face {
-  font-family: "Montserratreg";
-  src: url("../fonts/montserrat/Montserrat-Regular.otf");
-}
-
-@font-face {
-  font-family: "Montserratthin";
-  src: url("../fonts/montserrat/Montserrat-Thin.otf");
-}
-
-@font-face {
   font-family: "Montserratsemibold";
   src: url("../fonts/montserrat/Montserrat-SemiBold.otf");
 }
 
-@font-face {
-  font-family: "Montserratmed";
-  src: url("../fonts/montserrat/Montserrat-Medium.otf");
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: #0D0221;
+  overflow: hidden;
+  user-select: none;
+}
+
+.load {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: #0D0221;
+  z-index: 1;
+  animation: slide 2.5s ease forwards;
+}
+
+@keyframes slide {
+  0% {
+    width: 99.8%;
+  }
+  25% {
+    width: 99.8%;
+  }
+  50% {
+    width: 99.8%;
+  }
+  98% {
+    width: 0%;
+    border-right: 2px solid #FF3366;
+  }
+  100% {
+    width: 0%;
+  }
 }
 
 @keyframes fade {
@@ -35,89 +58,6 @@
   to {
     opacity: 100%;
   }
-}
-
-#name {
-  font-family: "Bebas Neue Bold";
-  pointer-events: none;
-  color: #81fbf2;
-  font-size: 50px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20vh;
-  animation: fade 2s 1.45s ease forwards;
-  user-select: none;
-}
-
-#says {
-  font-family: "Bebas Neue Bold";
-  pointer-events: none;
-  color: #ffffff;
-  font-size: 20px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 1vh;
-  animation: fade 2s 1.5s ease forwards;
-  user-select: none;
-}
-
-#hello {
-  font-family: "Bebas Neue Bold";
-  pointer-events: none;
-  color: #81fbf2;
-  font-size: 200px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 1vh;
-  animation: fade 2s 1.55s ease forwards;
-  user-select: none;
-}
-
-#and {
-  font-family: "Bebas Neue Bold";
-  pointer-events: none;
-  color: #ffffff;
-  font-size: 20px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: -2.5vh;
-  animation: fade 2s 1.6s ease forwards;
-  user-select: none;
-}
-
-#welcome {
-  font-family: "Bebas Neue Bold";
-  pointer-events: none;
-  color: #81fbf2;
-  font-size: 200px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 1vh;
-  animation: fade 2s 1.65s ease forwards;
-  user-select: none;
-}
-
-body {
-  background: #0d0221;
-}
-
-html,
-body {
-  height: 100vh;
-  width: 100vw;
-  background-color: #0d0221;
-  overflow: hidden;
-  user-select: none;
 }
 
 #nav {
@@ -132,50 +72,50 @@ body {
 
 #junior {
   text-decoration: none;
-  color: #81fbf2;
-  border: 1px solid #81fbf2;
+  color: #FF3366;
+  border: 1px solid #FF3366;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
   padding-right: 8px;
   transition: all 0.5s ease;
-  animation: fade 2s 1s ease forwards;
+  animation: fade 2s 1.45s ease forwards;
 }
 
 #junior:hover,
 #junior:focus {
   border-radius: 15px;
   text-decoration: underline;
-  border-color: #ff3366;
-  color: #ff3366;
+  border-color: #81FBF2;
+  color: #81FBF2;
   text-decoration-thickness: 1px;
 }
 
 #senior {
   text-decoration: none;
-  color: #81fbf2;
-  border: 1px solid #81fbf2;
+  color: #FF3366;
+  border: 1px solid #FF3366;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
   padding-right: 8px;
   transition: all 0.5s ease;
-  animation: fade 2s 1s ease forwards;
+  animation: fade 2s 1.45s ease forwards;
 }
 
 #senior:hover,
 #senior:focus {
   border-radius: 15px;
-  border-color: #fec9f1;
+  border-color: #FEC9F1;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  color: #fec9f1;
+  color: #FEC9F1;
 }
 
 #about {
   text-decoration: none;
-  color: #81fbf2;
-  border: 1px solid #81fbf2;
+  color: #FF3366;
+  border: 1px solid #FF3366;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 8px;
@@ -183,7 +123,7 @@ body {
   transition: all 0.5s ease;
   margin-left: 75px;
   margin-right: 75px;
-  animation: fade 2s 1s ease forwards;
+  animation: fade 2s 1.45s ease forwards;
 }
 
 #about:hover,
@@ -193,42 +133,30 @@ body {
   text-decoration-thickness: 1px;
 }
 
-.load {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  background-color: #0d0221;
-  z-index: 1;
-  animation: slide 2.5s ease forwards;
+#title {
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 95vh;
+  font-family: "Bebas Neue Bold";
+  font-size: 200px;
+  color: #FF3366;
+  animation: fade 2s 1.45s ease forwards;
+  user-select: none;
 }
 
-@keyframes slide {
-  0% {
-    height: 99.8%;
-  }
-  25% {
-    height: 99.8%;
-  }
-  50% {
-    height: 99.8%;
-  }
-  98% {
-    height: 0%;
-    border-top: 2px solid #81fbf2;
-  }
-  100% {
-    height: 0%;
-  }
-}
+
 
 .menubtn {
+  z-index: 1;
   position: absolute;
   display: flex;
   width: 40px;
   height: 40px;
-  border: 1px solid #81fbf2;
+  border: 1px solid #FF3366;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
@@ -285,6 +213,7 @@ body {
 }
 
 .dropdown-content {
+  z-index: 1;
   display: block;
   opacity: 0;
   width: 200px;
@@ -310,6 +239,7 @@ body {
 }
 
 .dropdownLinks {
+  transition: all 0.5s ease;
   padding: 15px;
   list-style: none;
   padding-top: 10px;
@@ -324,7 +254,7 @@ body {
   font-family: "Montserratsemibold";
   font-weight: 400;
   text-decoration: none;
-  color: ##81FBF2;
+  color: #FF3366;
   font-size: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -338,7 +268,7 @@ body {
   text-decoration: underline;
   transition: all 0.5s ease;
   text-decoration-thickness: 1px;
-  color: ##81FBF2;
+  color: #81FBF2;
 }
 
 .juniorCollapsible {
@@ -346,7 +276,7 @@ body {
   display: none;
   font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
-  color: #81fbf2;
+  color: #FF3366;
   font-weight: 400;
   font-size: 15px;
   padding-top: 0px;
@@ -364,7 +294,7 @@ body {
   display: none;
   font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
-  color: #81fbf2;
+  color: #FF3366;
   font-weight: 400;
   font-size: 15px;
   padding-top: 0px;
@@ -385,7 +315,7 @@ body {
 #juniorProjects {
   text-decoration: none;
   transition: all 0.5s ease;
-  color: #81fbf2;
+  color: #FF3366;
 }
 
 #juniorHome:hover,
@@ -397,7 +327,13 @@ body {
   text-decoration: underline;
   transition: all 0.5s ease;
   text-decoration-thickness: 1px;
-  color: #ff3366;
+  color: #FF3366;
+}
+
+.juniorCollapsible .active {
+  border-left: 1px solid #81FBF2;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #seniorHome,
@@ -409,7 +345,7 @@ body {
   text-indent: 10px;
   text-decoration: none;
   transition: all 0.5s ease;
-  color: #81fbf2;
+  color: #FF3366;
 }
 
 #seniorHome:hover,
@@ -422,14 +358,14 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   transition: all 0.5s ease;
-  color: #fec9f1;
+  color: #FEC9F1;
 }
 
 #seniorLink {
   text-align: left;
   font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
-  color: #81FBF2;
+  color: #FF3366;
   font-weight: 400;
   font-size: 20px;
   padding: 15px;
@@ -439,18 +375,18 @@ body {
   text-align: left;
   font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
-  color: #81FBF2;
+  color: #FF3366;
   font-weight: 400;
   font-size: 20px;
   padding: 15px;
 }
 
 #homeLink {
-  transition: all 0.5s ease;
   text-align: left;
+  transition: all 0.5s ease;
   font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
-  color: #81FBF2;
+  color: #FF3366;
   font-weight: 400;
   font-size: 20px;
   padding: 15px;
@@ -508,23 +444,17 @@ body {
   border-radius: 2.5px;
 }
 
-#seniorLink:visited {
-  font-family: "Montserratsemibold", sans-serif;
-  color: #81fbf2;
-  text-decoration: none;
-}
 
-#juniorLink:visited {
-  font-family: "Montserratsemibold", sans-serif;
-  color: #81fbf2;
-  text-decoration: none;
-}
 
-#homeLink:visited {
-  font-family: "Montserratsemibold", sans-serif;
-  color: #81fbf2;
-  text-decoration: none;
-}
+
+
+
+
+
+
+
+
+
 
 /*
 Red: #FF3366

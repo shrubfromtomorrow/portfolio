@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../../Images/Red.png" />
+    <link rel="shortcut icon" href="../Images/Red.png" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,400;0,800;0,900;1,700&display=swap" rel="stylesheet"/> -->
@@ -26,6 +26,9 @@
     <div class="dropdown">
       <div class="dropdown-content">
         <ul class="dropdownLinks">
+          <li id="homeLinkList">
+            <a class="active" id="homeLink" href="index.html">Home</a>
+          </li>
           <li id="juniorLinkList">
             <a id="juniorLink" href="#">Junior</a>
             <div id="horizPlusjun"></div>
@@ -127,13 +130,11 @@
         </ul>
       </div>
     </div>
-    <div>
-      <h1 id="name">ORION</h1>
-      <h1 id="says">says</h1>
-      <h1 id="hello">HELLO</h1>
-      <h1 id="and">and</h1>
-      <h1 id="welcome">WELCOME</h1>
-    </div>
+      <p id="name">orion</p>
+      <p id="says">says</p>
+      <p id="hello">hello</p>
+      <p id="and">and</p>
+      <p id="welcome">welcome</p>
     <script>
       const menuBtn = document.querySelector(".menubtn");
       let menuOpen = false;

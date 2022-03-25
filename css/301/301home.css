@@ -18,6 +18,7 @@ body{
   width: 100vw;
   background-color: #0D0221;
   overflow: hidden;
+  user-select: none;
 }
 
 .load {
@@ -26,7 +27,7 @@ body{
   position: absolute;
   bottom: 0%;
   left: 0%;
-  background-color: #0d0221;
+  background-color: #0D0221;
   z-index: 1;
   animation: slide 2.5s ease forwards;
 }
@@ -134,6 +135,8 @@ body{
 
 #title {
   display: flex;
+  pointer-events: none;
+  user-select: none;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -142,7 +145,10 @@ body{
   font-size: 200px;
   color: #FF3366;
   animation: fade 2s 1.45s ease forwards;
+  user-select: none;
 }
+
+
 
 .menubtn {
   z-index: 1;
@@ -233,6 +239,7 @@ body{
 }
 
 .dropdownLinks {
+  transition: all 0.5s ease;
   padding: 15px;
   list-style: none;
   padding-top: 10px;
@@ -241,12 +248,13 @@ body{
 }
 
 #seniorLinkList,
-#juniorLinkList {
+#juniorLinkList,
+#homeLinkList {
   display: block;
   font-family: "Montserratsemibold";
   font-weight: 400;
   text-decoration: none;
-  color: #81fbf2;
+  color: #FF3366;
   font-size: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -254,6 +262,13 @@ body{
   padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
+}
+
+#homeLink:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+  text-decoration-thickness: 1px;
+  color: #81FBF2;
 }
 
 .juniorCollapsible {
@@ -315,6 +330,12 @@ body{
   color: #FF3366;
 }
 
+.juniorCollapsible .active {
+  border-left: 1px solid #81FBF2;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 #seniorHome,
 #seniorInternships,
 #seniorLevelupreqs,
@@ -352,6 +373,17 @@ body{
 
 #juniorLink {
   text-align: left;
+  font-family: "Montserratsemibold", sans-serif;
+  text-decoration: none;
+  color: #FF3366;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px;
+}
+
+#homeLink {
+  text-align: left;
+  transition: all 0.5s ease;
   font-family: "Montserratsemibold", sans-serif;
   text-decoration: none;
   color: #FF3366;
@@ -412,17 +444,6 @@ body{
   border-radius: 2.5px;
 }
 
-#seniorLink:visited {
-  font-family: "Montserratsemibold", sans-serif;
-  color: #FF3366;
-  text-decoration: none;
-}
-
-#juniorLink:visited {
-  font-family: "Montserratsemibold", sans-serif;
-  color: #FF3366;
-  text-decoration: none;
-}
 
 
 
