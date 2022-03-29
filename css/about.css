@@ -13,6 +13,15 @@
   src: url("../fonts/montserrat/Montserrat-SemiBold.otf");
 }
 
+/* @keyframes fade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+} */
+
 body{
   height: 100vh;
   width: 100vw;
@@ -22,10 +31,10 @@ body{
 }
 
 .load {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 0%;
+  top: 0%;
   left: 0%;
   background-color: #0D0221;
   z-index: 1;
@@ -34,29 +43,20 @@ body{
 
 @keyframes slide {
   0% {
-    width: 99.8%;
+    height: 99.8%;
   }
   25% {
-    width: 99.8%;
+    height: 99.8%;
   }
   50% {
-    width: 99.8%;
+    height: 99.8%;
   }
   98% {
-    width: 0%;
-    border-right: 2px solid #0197F6;
+    height: 0%;
+    border-bottom: 2px solid #0197F6;
   }
   100% {
-    width: 0%;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
+    height: 0%;
   }
 }
 
@@ -68,6 +68,7 @@ body{
   justify-content: center;
   align-items: center;
   margin-top: 2vh;
+  /* animation: fade 2s 1.45s ease forwards; */
 }
 
 #junior {
@@ -79,7 +80,6 @@ body{
   padding-left: 8px;
   padding-right: 8px;
   transition: all 0.5s ease;
-  animation: fade 2s 1.45s ease forwards;
 }
 
 #junior:hover,
@@ -100,7 +100,6 @@ body{
   padding-left: 8px;
   padding-right: 8px;
   transition: all 0.5s ease;
-  animation: fade 2s 1.45s ease forwards;
 }
 
 #senior:hover,
@@ -123,7 +122,6 @@ body{
   transition: all 0.5s ease;
   margin-left: 75px;
   margin-right: 75px;
-  animation: fade 2s 1.45s ease forwards;
 }
 
 #home:hover,
@@ -146,8 +144,8 @@ body{
   font-family: "Bebas Neue Bold";
   font-size: 200px;
   color: #0197F6;
-  animation: fade 2s 1.45s ease forwards;
   user-select: none;
+  /* animation: fade 2s 1.45s ease forwards; */
 }
 
 
@@ -164,6 +162,7 @@ body{
   transition: all 0.5s ease;
   margin-top: -30px;
   margin-left: 18px;
+  /* animation: fade 2s 1.45s ease forwards; */
 }
 
 .menubtn:hover {
