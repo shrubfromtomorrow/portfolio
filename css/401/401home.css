@@ -599,24 +599,49 @@
 
 #imageContainer {
     grid-row: span 2;
+    border-radius: 10px;
+    transition: all 0.5s ease;
 }
 
 #imageCover {
   background-color: black;
   width: 100%;
   height: 100%;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  top: 1%;
 }
 
 #test1 {
   width: 100%;
   height: 100%;
+  position: relative;
   object-fit: cover;
   opacity: 100%;
   transition: all 0.5s ease;
+  border-radius: 10px;
+  transform: translateY(-19px);
+}
+
+#imageSum {
+  position: relative;
+  top: calc(50%);
+  text-align: center;
+  color: white;
+  font-family: "Montserratsemibold", sans-serif;
 }
 
 #test1:hover{
-  opacity: 30%;
+  opacity: 20%;
+  border-radius: 30px;
+}
+
+#imageCover:hover{
+  border-radius: 30px;
+}
+
+#imageContainer:hover {
+  border-radius: 30px;
 }
 
 #test2 {
