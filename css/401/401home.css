@@ -58,7 +58,7 @@
   user-select: none;
   margin: 0;
   visibility: hidden;
-  animation: scrollability 1s 1s forwards;
+  animation: scrollability 1s 12s forwards;
 }
 
 @keyframes scrollability {
@@ -194,6 +194,7 @@
   pointer-events: none;
   user-select: none;
   justify-content: center;
+  line-height: 1;
   align-items: center;
   text-align: center;
   transform: translateY(calc(50vh - 100px));
@@ -246,8 +247,8 @@
   pointer-events: none;
   color: #FEC9F1;
   opacity: 0;
-  user-select: none;
   transform: translateY(67vh);
+  user-select: none;
   animation: fadein 1.5s 11s forwards;
 }
 
@@ -260,7 +261,6 @@
   color: #FEC9F1;
   opacity: 0;
   user-select: none;
-  transform: translateY(68vh);
   animation:
     fadein 1.5s 11.25s forwards,
     bob .5s 11.5s forwards;
@@ -272,9 +272,9 @@
 }
 
 @keyframes bob {
-  0% {transform: translateY(68vh);}
-  50% {transform: translateY(68.5vh);}
-  100% {transform: translateY(68vh);}
+  0% {transform: translateY(0vh);}
+  50% {transform: translateY(1vh);}
+  100% {transform: translateY(0vh);}
 }
 
 .menubtn {
@@ -344,7 +344,6 @@
 .dropdown-content {
   transform: translate(0, 2vh);
   z-index: 1;
-  display: block;
   opacity: 0;
   width: 200px;
   height: auto;
@@ -360,12 +359,14 @@
 
 .dropdown.open .dropdown-content {
   position: absolute;
+  display: inline-flex;
   margin-left: 0px;
   opacity: 1;
 }
 
 .dropdown {
   position: absolute;
+  display: inline-flex;
 }
 
 .dropdownLinks {
