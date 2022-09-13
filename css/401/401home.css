@@ -58,7 +58,6 @@
   user-select: none;
   margin: 0;
   visibility: hidden;
-  /* animation: scrollability 1s 12s forwards; */
   animation: scrollability 1s 1s forwards;
 }
 
@@ -81,7 +80,7 @@
   top: 0%;
   right: 0%;
   background-color: #0D0221;
-  z-index: 999;
+  z-index: 1;
   animation: slide 2.5s ease;
   animation-fill-mode: forwards;
 }
@@ -578,78 +577,61 @@
 }
 
 .imageGrid {
-  --gap: 10px;
-  --colNum: 2;
-  --rowHeight: 40vh;
-
   display: grid;
-  transform: translateY(15vh);
   box-sizing: border-box;
-  padding: var(--gap);
-  grid-template-columns: repeat(var(--colNum), 1fr);
-  grid-auto-rows: var(--rowHeight);
-  gap: var(--gap);
+  padding: 10px;
+  transform: translateY(15vh);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: calc(43vh - 20px);
+  gap: 10px;
 }
 
-.imageGrid > div {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-#imageContainer {
-    grid-row: span 2;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-}
-
-#imageCover {
-  background-color: black;
-  width: 100%;
-  height: 100%;
+#lightsImCont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: span 2;
+  background-color: #0D0221;
   transition: all 0.5s ease;
-  border-radius: 10px;
-  top: 1%;
 }
 
-#test1 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 100%;
-  z-index: 2;
-  transition: all 0.5s ease;
-  border-radius: 10px;
-}
-
-#imageSum {
-  position: absolute;
-  width: 49%;
-  top: calc(50% - .5ch);
+#lightsImTextCont {
+  grid-row-start: 1;
+  grid-column-start: 1;
   text-align: center;
-  color: white;
-  z-index: 1;
+  margin: 0 !important;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+#lightsImText {
+  color: #FEC9F1;
   font-family: "Montserratsemibold", sans-serif;
   font-size: 20px;
-  opacity: 0%;
-  transition: all 0.4s ease;
+  transform: translate(10%, calc(43vh - 20px));
+  text-align: center;
+  height: auto;
+  width: 80%;
+  margin: 0 !important;
+  transition: all 0.5s ease;
 }
 
-#test1:hover{
-  opacity: 20%;
-  border-radius: 30px;
+#lightsIm {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
 }
 
-#imageCover:hover > #imageSum{
+
+#lightsImCont:hover > #lightsIm {
+    opacity: 10%;
+}
+
+#lightsImCont:hover > #lightsImTextCont {
   opacity: 100%;
-}
-
-#imageCover:hover{
-  border-radius: 30px;
-}
-
-#imageContainer:hover {
-  border-radius: 30px;
 }
 
 #test2 {
