@@ -1,0 +1,53 @@
+:root {
+    --Red: #ff3366;
+    --Pink: #fec9f1;
+    --Black: #0d0221;
+    --LightBlue: #81fbf2;
+    --DarkGrey: #696773;
+}
+
+@font-face {
+    font-family: "Bebas Neue Bold";
+    src: url("../fonts/bebas-neue/BebasNeue-Bold.otf");
+}
+@font-face {
+    font-family: "Montserrat Semibold";
+    src: url("../fonts/montserrat/Montserrat-SemiBold.otf");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Montserrat Semibold", sans-serif;
+}
+
+body {
+    background: grey;
+    min-height: 100vh;
+}
+
+.menuBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid white;
+}
+
+.menuBtnBurger {
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}

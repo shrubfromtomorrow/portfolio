@@ -205,7 +205,7 @@
 
 @keyframes typing {
   from { width: 0 }
-  to { width: calc(51.5ch) }
+  to { width: calc(57.5ch) }
 }
 
 @keyframes blink {
@@ -233,8 +233,8 @@
   color: #FEC9F1;
   user-select: none;
   animation:
-    typing 4s 5s steps(55, end) forwards,
-    blink .8s 4s 9;
+    typing 4s 4s steps(57, end) forwards,
+    blink .8s 2s 11;
 }
 
 #highlightsPrompt {
@@ -247,7 +247,7 @@
   opacity: 0;
   transform: translateY(67vh);
   user-select: none;
-  animation: fadein 1.5s 11s forwards;
+  animation: fadein 1.5s 10.5s forwards;
 }
 
 #scrollCaret {
@@ -260,8 +260,8 @@
   opacity: 0;
   user-select: none;
   animation:
-    fadein 1.5s 11.25s forwards,
-    bob .5s 11.5s forwards;
+    fadein 1.5s 11s forwards,
+    bob .5s 11.25s forwards;
 }
 
 @keyframes fadein {

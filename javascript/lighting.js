@@ -1,6 +1,7 @@
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+
 const menuBtn = document.querySelector(".menubtn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -104,14 +105,14 @@ i++;
 
 let shown = 0;
 let interval;
-const options = {};
+const options = {threshold: 1.0};
 const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       shown++;
       if (shown <= 1) {
         console.log(entry);
-        interval = setInterval(Animate, 25, i);
+        interval = setInterval(Animate, 1, i);
       }
     } 
   })
