@@ -9,26 +9,44 @@
     </head>
     <body>
         <header>
-            <div class="expandable">
-                <div class="menuBtn">
-                    <div class="menuBtnBurger"></div>
+            <div class="navCont">
+                <div class="expandable">
+                    <div class="menuBtn">
+                        <div class="menuBtnBurger"></div>
+                    </div>
+                    <a>Home</a>
+                    <a>Junior</a>
                 </div>
-                <a>Home</a>
-                <a>Junior</a>
+                <div class="topNavCont">
+                    <div class="topnav">
+                        <ul id="navList">
+                            <li>
+                                <a href="/html/301/301home.html">Junior</a>
+                                <a href="index.html">Home</a>
+                                <a href="/html/401/401home.html">Senior</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="topnav">
-                <ul>
-                    <li>
-                        <a href="/html/301/301home.html">Junior</a>
-                        <a href="index.html">Home</a>
-                        <a href="/html/401/401home.html">Senior</a>
-                    </li>
-                </ul>
-            </div>
+            </header>
         </header>
         <main>
             <h1 id="title">Test</h1>
             <h3 id="burb">This is a blurb</h3>
         </main>
+        <script>
+            const menuBtn = document.querySelector('.menuBtn');
+            let menuOpen = false;
+            menuBtn.addEventListener('click', () => {
+            if(!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+            });
+        </script>
     </body>
 </html>
