@@ -14,8 +14,6 @@
                     <div class="menuBtn">
                         <div class="menuBtnBurger"></div>
                     </div>
-                    <a>Home</a>
-                    <a>Junior</a>
                 </div>
                 <div class="topNavCont">
                     <div class="topnav">
@@ -30,18 +28,26 @@
             </header>
         </header>
         <main>
+            <div class="columnMenu">
+                <a>Junior</a>
+                <a>Senior</a>
+            </div>
             <h1 id="title">Test</h1>
             <h3 id="burb">This is a blurb</h3>
         </main>
         <script>
             const menuBtn = document.querySelector('.menuBtn');
+            const columnMenu = document.querySelector('.columnMenu');
+            let columnOpen = false;
             let menuOpen = false;
             menuBtn.addEventListener('click', () => {
             if(!menuOpen) {
                 menuBtn.classList.add('open');
+                columnMenu.classList.add('open');
                 menuOpen = true;
             } else {
                 menuBtn.classList.remove('open');
+                columnMenu.classList.remove('open');
                 menuOpen = false;
             }
             });

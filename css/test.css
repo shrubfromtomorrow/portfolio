@@ -26,6 +26,7 @@
 html {
     box-sizing: border-box;
     font-family: "Montserrat Semibold", sans-serif;
+    color: #fff;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 }
 
 .expandable {
-    padding: 1rem;
+    padding: 1.4rem;
 }
 
 .menuBtn {
@@ -49,18 +50,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid var(--Pink);
+    transition: all 0.5s ease;
+    border: 1px solid var(--MedBlue);
+}
+
+.menuBtn:hover {
+    border-radius: 1.5rem;
 }
 
 .menuBtnBurger {
-    width: 1.6rem;
-    height: 0.2rem;
+    width: 1.5rem;
+    height: 0.15rem;
     background: white;
-    border-radius: 5px;
+    border-radius: 1em;
     transition: all 0.3s ease-in-out;
 }
 
@@ -68,10 +73,10 @@ body {
 .menuBtnBurger::after {
     content: "";
     position: absolute;
-    width: 1.6rem;
-    height: 0.2rem;
+    width: 1.5rem;
+    height: 0.15rem;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 1em;
     transition: all 0.3s ease-in-out;
 }
 
@@ -88,7 +93,11 @@ body {
     box-shadow: none;
 }
 .menuBtn.open .menuBtnBurger::before {
-    transform: rotate(45deg);
+    transform: rotate(225deg);
+}
+
+.menuBtn.open .menuBtnBurger {
+    transform: rotate(270deg);
 }
 .menuBtn.open .menuBtnBurger::after {
     transform: rotate(-45deg);
@@ -105,23 +114,23 @@ body {
 }
 
 #navList {
+    padding: 0;
+    padding-top: 1.4rem;
     font-size: 1.3rem;
     list-style-type: none;
-    padding: 0;
     display: inline-flex;
 }
 
 #navList > li {
-    padding-top: 1.4rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
 }
 
 #junior {
-    padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-top: 0.18rem;
-    padding-bottom: 0.18rem;
+    padding-left: 0.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     text-decoration: none;
     color: var(--MedBlue);
     border: 1px solid var(--MedBlue);
@@ -130,7 +139,7 @@ body {
 
 #junior:hover,
 #junior:focus {
-    border-radius: 15px;
+    border-radius: 1rem;
     text-decoration: underline;
     border-color: #ff3366;
     color: #ff3366;
@@ -138,10 +147,10 @@ body {
 }
 
 #about {
-    padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-top: 0.18rem;
-    padding-bottom: 0.18rem;
+    padding-left: 0.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     text-decoration: none;
     color: var(--MedBlue);
     border: 1px solid var(--MedBlue);
@@ -150,7 +159,7 @@ body {
 
 #about:hover,
 #about:focus {
-    border-radius: 15px;
+    border-radius: 1rem;
     border-color: var(--MedBlue);
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -158,10 +167,10 @@ body {
 }
 
 #home {
-    padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-top: 0.18rem;
-    padding-bottom: 0.18rem;
+    padding-left: 0.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     text-decoration: none;
     color: var(--MedBlue);
     border: 1px solid var(--MedBlue);
@@ -172,7 +181,36 @@ body {
 #home:focus {
     color: var(--LightBlue);
     border: 1px solid var(--LightBlue);
-    border-radius: 15px;
+    border-radius: 1rem;
     text-decoration: underline;
     text-decoration-thickness: 1px;
+}
+
+/* MAIN */
+
+.columnMenu {
+    position: absolute;
+    transform: translateX(-15vw);
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+.columnMenu.open {
+    transform: translateX(0vw);
+}
+
+.columnMenu > a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--MedBlue);
+}
+
+h1,
+h3 {
+    color: black;
 }
