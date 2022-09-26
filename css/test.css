@@ -4,6 +4,7 @@
     --Black: #0d0221;
     --LightBlue: #81fbf2;
     --DarkGrey: #696773;
+    --MedBlue: #0197f6;
 }
 
 @font-face {
@@ -28,19 +29,14 @@ html {
 }
 
 body {
-    background: grey;
+    background: var(--Black);
     min-height: 100vh;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
 .navCont {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .expandable {
@@ -57,7 +53,7 @@ ul {
     height: 2.5rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border: 1px solid #fec9f1;
+    border: 1px solid var(--Pink);
 }
 
 .menuBtnBurger {
@@ -76,9 +72,9 @@ ul {
     height: 0.2rem;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all 0.3s ease-in-out;
 }
+
 .menuBtnBurger::before {
     transform: translateY(-0.5rem);
 }
@@ -99,8 +95,6 @@ ul {
 }
 
 .topNavCont {
-    width: 100%;
-    margin-right: 7.5rem;
     justify-content: center;
     display: flex;
 }
@@ -111,5 +105,74 @@ ul {
 }
 
 #navList {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+}
+
+#navList > li {
+    padding-top: 1.4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+#junior {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.18rem;
+    padding-bottom: 0.18rem;
+    text-decoration: none;
+    color: var(--MedBlue);
+    border: 1px solid var(--MedBlue);
+    transition: all 0.5s ease;
+}
+
+#junior:hover,
+#junior:focus {
+    border-radius: 15px;
+    text-decoration: underline;
+    border-color: #ff3366;
+    color: #ff3366;
+    text-decoration-thickness: 1px;
+}
+
+#about {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.18rem;
+    padding-bottom: 0.18rem;
+    text-decoration: none;
+    color: var(--MedBlue);
+    border: 1px solid var(--MedBlue);
+    transition: all 0.5s ease;
+}
+
+#about:hover,
+#about:focus {
+    border-radius: 15px;
+    border-color: var(--MedBlue);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: var(--MedBlue);
+}
+
+#home {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.18rem;
+    padding-bottom: 0.18rem;
+    text-decoration: none;
+    color: var(--MedBlue);
+    border: 1px solid var(--MedBlue);
+    transition: all 0.5s ease;
+}
+
+#home:hover,
+#home:focus {
+    color: var(--LightBlue);
+    border: 1px solid var(--LightBlue);
+    border-radius: 15px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
