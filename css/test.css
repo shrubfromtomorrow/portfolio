@@ -24,13 +24,14 @@
 }
 
 html {
+    line-height: 1;
     box-sizing: border-box;
     font-family: "Montserrat Semibold", sans-serif;
     color: #fff;
 }
 
 body {
-    background: var(--Black);
+    background-color: var(--Black);
     min-height: 100vh;
 }
 
@@ -50,8 +51,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
     transition: all 0.5s ease;
     border: 1px solid var(--MedBlue);
@@ -62,8 +63,8 @@ body {
 }
 
 .menuBtnBurger {
-    width: 1.5rem;
-    height: 0.15rem;
+    width: 2rem;
+    height: 0.2rem;
     background: white;
     border-radius: 1em;
     transition: all 0.3s ease-in-out;
@@ -73,8 +74,8 @@ body {
 .menuBtnBurger::after {
     content: "";
     position: absolute;
-    width: 1.5rem;
-    height: 0.15rem;
+    width: 2rem;
+    height: 0.2rem;
     background: #fff;
     border-radius: 1em;
     transition: all 0.3s ease-in-out;
@@ -190,8 +191,7 @@ body {
 
 .columnMenu {
     position: absolute;
-    transform: translateX(-15vw);
-    width: 15vw;
+    transform: translateX(-12rem);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -201,12 +201,15 @@ body {
 }
 
 .columnMenu.open {
-    transform: translateX(0vw);
+    transform: translateX(calc(0vw + 1.4rem));
 }
 
 .columnMenu > a {
+    font-size: 1.3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     color: var(--MedBlue);
 }
 
