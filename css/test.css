@@ -5,6 +5,7 @@
     --LightBlue: #81fbf2;
     --DarkGrey: #696773;
     --MedBlue: #0197f6;
+    --White: #fdfffc;
 }
 
 @font-face {
@@ -27,7 +28,7 @@ html {
     line-height: 1;
     box-sizing: border-box;
     font-family: "Montserrat Semibold", sans-serif;
-    color: #fff;
+    color: var(--White);
 }
 
 body {
@@ -67,7 +68,7 @@ body {
 .menuBtnBurger {
     width: 2rem;
     height: 0.2rem;
-    background: white;
+    background: var(--White);
     border-radius: 1em;
     transition: all 0.3s ease-in-out;
 }
@@ -78,7 +79,7 @@ body {
     position: absolute;
     width: 2rem;
     height: 0.2rem;
-    background: #fff;
+    background: var(--White);
     border-radius: 1em;
     transition: all 0.3s ease-in-out;
 }
@@ -135,7 +136,7 @@ body {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     text-decoration: none;
-    color: var(--MedBlue);
+    color: var(--White);
     border: 1px solid var(--MedBlue);
     transition: all 0.5s ease;
 }
@@ -155,7 +156,7 @@ body {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     text-decoration: none;
-    color: var(--MedBlue);
+    color: var(--White);
     border: 1px solid var(--MedBlue);
     transition: all 0.5s ease;
 }
@@ -175,7 +176,7 @@ body {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     text-decoration: none;
-    color: var(--MedBlue);
+    color: var(--White);
     border: 1px solid var(--MedBlue);
     transition: all 0.5s ease;
 }
@@ -202,7 +203,7 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
     color: var(--MedBlue);
-    border: 1px solid white;
+    border: 1px solid var(--White);
     transition: all 0.3s ease-in-out;
 }
 
@@ -211,17 +212,15 @@ body {
 }
 
 #juniorColumn {
+    cursor: default;
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
 
-#seniorColumn {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-
-#juniorColumn::after {
+/* #juniorColumn::after {
+    color: var(--White);
     font-family: "foundation-icons";
+    display: inline-block;
     font-size: 1rem;
     padding-left: 0.7rem;
     content: "\e902";
@@ -229,21 +228,84 @@ body {
 }
 
 #juniorColumn:hover::after {
-    transition: all 0.3s ease-in;
     display: inline-block;
     transform: scale(1, -1);
-}
+} */
 
 #juniorChildCont {
+    color: var(--White);
+    user-select: none;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
 #juniorChildCont > a {
-    border-bottom: 1px solid white;
+    font-size: 1rem;
+    /* border-bottom: 1px solid var(--White); */
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
+    padding-bottom: 0.2rem;
+    position: relative;
+}
+
+#juniorChildCont > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0.1rem;
+    background-color: var(--Red);
+    transition: all 0.3s ease;
+}
+
+#juniorChildCont > a:hover::before {
+    width: 100%;
+}
+
+#seniorColumn {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#seniorChildCont > a:hover::before {
+    width: 100%;
+}
+
+#seniorChildCont {
+    color: var(--White);
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    text-align: left;
+}
+
+#seniorChildCont > a {
+    font-size: 1rem;
+    /* border-bottom: 1px solid var(--White); */
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.2rem;
+    position: relative;
+}
+
+#seniorChildCont > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0.1rem;
+    background-color: var(--Red);
+    transition: all 0.3s ease;
+}
+
+#seniorChildCont > a:hover::before {
+    width: 100%;
 }
 
 h1,
