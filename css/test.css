@@ -332,3 +332,21 @@ body {
     font-size: 2rem;
     padding-top: 1rem;
 }
+
+.scrollPrompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.1rem;
+    flex-direction: column;
+}
+
+#scrollPromptText {
+    margin-top: 8rem;
+}
+
+.icon-arrow-down {
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
