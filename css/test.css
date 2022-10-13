@@ -100,7 +100,6 @@ body {
 .menuBtn.open .menuBtnBurger {
     /* transform: translateX(-50px); */
     background: transparent;
-    box-shadow: none;
 }
 .menuBtn.open .menuBtnBurger::before {
     transform: rotate(225deg);
@@ -126,14 +125,14 @@ body {
 #navList {
     padding: 0;
     padding-top: 1.7rem;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.2vw, 1.2vw);
     list-style-type: none;
     display: inline-flex;
 }
 
 #navList > li {
-    padding-right: 2.4rem;
-    padding-left: 2.4rem;
+    padding-right: clamp(1rem, 4vw, 4vw);
+    padding-left: clamp(1rem, 4vw, 4vw);
 }
 
 #junior {
@@ -324,12 +323,12 @@ body {
 }
 
 #title {
-    font-size: 10rem;
+    font-size: clamp(8rem, 10vw, 10vw);
     color: var(--MedBlue);
 }
 
 #blurb {
-    font-size: 2rem;
+    font-size: clamp(2rem, 1vw, 1vw);
     padding-top: 1rem;
 }
 
