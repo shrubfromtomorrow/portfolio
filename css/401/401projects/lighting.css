@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 1;
 }
 
 @font-face {
@@ -624,15 +625,17 @@ header {
 .subTitleCont > div {
   width: 100%;
   text-align: center;
-  font-family: "Montserratsemibold";
-  font-size: 2rem;
+  font-family: "Bebas Neue Bold";
+  letter-spacing: 0.1vw;
+  font-size: 2.3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-radius: 2rem;
   background-color: #0d0221;
 }
 
-main {
+.inTheBeginning {
+  user-select: text;
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-family: "Montserratsemibold";
@@ -647,14 +650,31 @@ main {
 }
 
 #paraTitle1 {
+  font-family: "Bebas Neue Bold";
+  letter-spacing: 0.1vw;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 
 #mainBody1 {
+  font-size: clamp(0.6rem, 1vw, 1vw);
   line-height: 2;
   padding: 1rem;
+}
+
+#mainBody1 > a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#mainBody1 > a:link:hover {
+  color: #fec9f1;
+  text-decoration: underline;
+}
+
+#mainBody1 > a:visited {
+  color: #fec9f1;
 }
 
 .textCont2 {
@@ -665,12 +685,40 @@ main {
 }
 
 #paraTitle2 {
+  font-family: "Bebas Neue Bold";
+  letter-spacing: 0.1vw;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 
 #mainBody2 {
+  font-size: clamp(0.6rem, 1vw, 1vw);
   line-height: 2;
+  padding: 1rem;
+}
+
+.theCode {
+  user-select: text;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "Montserratsemibold";
+  color: white;
+}
+
+.theCodeHeaderCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+  border-radius: 2rem;
+  margin: 1rem;
+  background-color: #0d0221;
+}
+
+#theCodeHeader {
+  font-family: "Bebas Neue Bold";
+  letter-spacing: 0.1vw;
+  font-size: 4rem;
   padding: 1rem;
 }
