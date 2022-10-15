@@ -53,8 +53,7 @@
   grid-template-rows: 11fr 32fr;
   max-width: 100vw;
   width: 100%;
-  top: 100vh;
-  height: 100vh;
+  top: 100%;
   background-color: #fec9f1;
   overflow-x: hidden;
   overflow-y: auto;
@@ -627,7 +626,7 @@ header {
   text-align: center;
   font-family: "Bebas Neue Bold";
   letter-spacing: 0.1vw;
-  font-size: 2.3rem;
+  font-size: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-radius: 2rem;
@@ -701,7 +700,8 @@ header {
 .theCode {
   user-select: text;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 2fr;
   font-family: "Montserratsemibold";
   color: white;
 }
@@ -721,4 +721,42 @@ header {
   letter-spacing: 0.1vw;
   font-size: 4rem;
   padding: 1rem;
+}
+
+.lightsImCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 1;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  background-color: #0d0221;
+}
+
+#lights {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.firstDescCont {
+  margin: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#firstDesc {
+  font-size: clamp(0.6rem, 1vw, 1vw);
+  line-height: 2;
+  padding: 1rem;
+}
+
+.firstDescpt2Cont {
+  grid-column: span 2;
+  margin: 1rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
 }

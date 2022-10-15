@@ -150,7 +150,7 @@
         <main>
           <div class="inTheBeginning">
             <div class="textCont1">
-              <div id="paraTitle1">I found a video</div>
+              <div id="paraTitle1">I Found a Video</div>
               <div id="mainBody1">
                 Around December of 2021, I found a video about controlling LEDs
                 in 3D space for a Christmas tree. It was absolutely fascinating
@@ -171,10 +171,10 @@
               </div>
             </div>
             <div class="textCont2">
-              <div id="paraTitle2">The better days</div>
+              <div id="paraTitle2">The Better Days</div>
               <div id="mainBody2">
                 One day in July of 2022, the Google algorithm gods looked down
-                upon me and said "now's a good a time as any" and a video popped
+                upon me and said "now's as good a time as any" and a video popped
                 into my YouTube feed. It was pretty unassuming, just a guide on
                 how to wire some WS2811 LEDs. I watched the video and came to
                 the realization that, I knew how to start!<br /><br />
@@ -188,8 +188,24 @@
           </div>
           <div class="theCode">
             <div class="theCodeHeaderCont">
-              <div id="theCodeHeader">The code</div>
-              <div id="technical"></div>
+              <div id="theCodeHeader">The Setup</div>
+            </div>
+            <div class="lightsImCont">
+              <img id="lights" src='../../../Images/humbleBeginnings.jpg'></img>
+            </div>
+            <div class="firstDescCont">
+              <div id="firstDesc">
+                This is where the images start but there was an intense electrical debugging session that occured before I came close to this point, so that is what I will walk you through.<br/> <br/>
+                There had been some lights and a Raspberry Pi 3b hanging around my house for a while so those were the first things I got, following the video I was recommended, I tried to wire the LEDs up.
+                The tutorial, however useful, was not helpful for my set of lights. I got the basic prinicple of how to get the adapters on but there was a lot of omitted information about what pins to use on the 
+                Raspberry Pi, or which end was negative, or which end took in data and which end outputted data. It took a bit of work, but I got the idea of how to match what pin on the Pi to to what area on the lights.
+                I then came to the realization that the pins I needed were not magically in a row and I would need some jumper cables to carry the current between the lights and the Pi.<br/><br/>
+                Fast forward 2 days and I now have the Pi wired correctly, or so I thought. I had confused the notation GPIO 18, thinking it meant PHYSCICAL pin 18, it did not.
+                After getting the wiring correct (I was able to tell by the lights flashing once when I plugged them in).<br/> I wrote some code.
+              </div>
+            </div>
+            <div class="firstDescpt2Cont">
+              <div id="firstDescpt2"></div>
             </div>
           </div>
         </main>

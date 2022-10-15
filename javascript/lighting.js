@@ -59,4 +59,3 @@ seniorLinkList.addEventListener("click", () => {
   }
 });
 
-
