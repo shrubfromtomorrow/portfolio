@@ -50,7 +50,7 @@
 .containerSecondPage {
   position: absolute;
   display: grid;
-  grid-template-rows: 11fr 32fr;
+  grid-template-rows: 5fr 64fr;
   max-width: 100vw;
   width: 100%;
   top: 100%;
@@ -627,8 +627,8 @@ header {
   font-family: "Bebas Neue Bold";
   letter-spacing: 0.1vw;
   font-size: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   border-radius: 2rem;
   background-color: #0d0221;
 }
@@ -701,7 +701,7 @@ header {
   user-select: text;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 4fr 3fr;
+  grid-template-rows: 1fr 4fr 3fr 2fr 2fr;
   font-family: "Montserratsemibold";
   color: white;
 }
@@ -778,4 +778,100 @@ header {
   width: 100%;
   height: 100%;
   object-fit: scale-down;
+}
+
+.procedureNote1Cont {
+  grid-column: span 2;
+  margin: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#procedureNote1 {
+  font-size: clamp(0.6rem, 1vw, 1vw);
+  line-height: 2;
+  padding: 1rem;
+}
+
+.code2DescCont {
+  margin: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#code2Desc {
+  font-size: clamp(0.6rem, 1vw, 1vw);
+  line-height: 2;
+  padding: 1rem;
+}
+
+.codeExample2Cont {
+  margin: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  /* background-color: #0d0221; */
+}
+
+.codeExample2Cont > img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.expansions {
+  user-select: text;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 3fr 2fr 2fr;
+  font-family: "Montserratsemibold";
+  color: white;
+}
+
+.expansions > div {
+  margin: 1rem;
+  /* margin-right: 0.5rem; */
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+.expansionsHeaderCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+  border-radius: 2rem;
+  margin: 1rem;
+  background-color: #0d0221;
+}
+
+#expansionsHeader {
+  font-family: "Bebas Neue Bold";
+  letter-spacing: 0.1vw;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.theCodeHeaderCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+  border-radius: 2rem;
+  margin: 1rem;
+  background-color: #0d0221;
+}
+
+.rotationTestDescCont {
+  margin: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#rotationTestDesc {
+  font-size: clamp(0.6rem, 1vw, 1vw);
+  line-height: 2;
+  padding: 1rem;
 }
