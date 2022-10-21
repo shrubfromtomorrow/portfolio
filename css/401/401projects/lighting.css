@@ -14,6 +14,11 @@
   src: url("../../../fonts/montserrat/Montserrat-SemiBold.otf");
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../../fonts/open-sans/OpenSans-Regular.ttf");
+}
+
 .containerFirstPage {
   position: absolute;
   max-width: 100vw;
@@ -446,7 +451,7 @@
   padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
-  line-height: 2;
+  line-height: 1.5;
   transition: all 0.5s ease;
 }
 
@@ -464,7 +469,7 @@
   padding-left: 40px;
   width: 100px;
   background: rgba(197, 198, 199, 0%);
-  line-height: 2;
+  line-height: 1.5;
   transition: all 0.5s ease;
 }
 
@@ -642,7 +647,7 @@ header {
   user-select: text;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-family: "Montserratsemibold";
+  font-family: "Open Sans";
   color: white;
 }
 
@@ -662,8 +667,8 @@ header {
 }
 
 #mainBody1 {
-  font-size: clamp(0.6rem, 1vw, 1vw);
-  line-height: 2;
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
   padding: 1rem;
 }
 
@@ -697,26 +702,29 @@ header {
 }
 
 #mainBody2 {
-  font-size: clamp(0.6rem, 1vw, 1vw);
-  line-height: 2;
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
   padding: 1rem;
 }
 
 .theCode {
+  font-family: "Open Sans";
+  /*line spacing*/
   user-select: text;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1.5fr 5fr 3.5fr 3fr 3fr 1.5fr 4fr;
-  font-family: "Montserratsemibold";
+  /* grid-template-rows: 1.5fr auto auto auto auto 1.5fr; */
+  /* font-family: "Montserratsemibold"; */
   color: white;
 }
 
-/* .theCode > div {
-  margin: 1rem;
-  /* margin-right: 0.5rem; */
-  border-radius: 2rem;
-  background-color: #0d0221;
-} */
+.theCode > div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .theCodeHeaderCont {
   display: flex;
@@ -732,7 +740,7 @@ header {
   font-family: "Bebas Neue Bold";
   letter-spacing: 0.1vw;
   font-size: 4rem;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .lightsImCont {
@@ -761,8 +769,8 @@ header {
 }
 
 #firstDesc {
-  font-size: clamp(0.6rem, 1vw, 1vw);
-  line-height: 2;
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
   padding: 1rem;
 }
 
@@ -774,8 +782,8 @@ header {
 }
 
 #firstDescpt2 {
-  font-size: clamp(0.6rem, 1vw, 1vw);
-  line-height: 2;
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
   padding: 1rem;
 }
 
@@ -801,8 +809,8 @@ header {
 }
 
 #procedureNote1 {
-  font-size: clamp(0.6rem, 1vw, 1vw);
-  line-height: 2;
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
   padding: 1rem;
 }
 
@@ -814,8 +822,8 @@ header {
 }
 
 #code2Desc {
-  font-size: clamp(0.6rem, 1vw, 1vw);
-  line-height: 2;
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
   padding: 1rem;
 }
 
@@ -846,7 +854,7 @@ header {
   font-family: "Bebas Neue Bold";
   letter-spacing: 0.1vw;
   font-size: 4rem;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .theCodeHeaderCont {
@@ -867,8 +875,73 @@ header {
   background-color: #0d0221;
 }
 
-#rotationTestDesc {
-  font-size: clamp(0.6rem, 1vw, 1vw);
-  line-height: 2;
+.rotationTestDescCont > div {
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
   padding: 1rem;
+}
+
+.rotationTestResult {
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#rotationTestResultDesc {
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+#rotationTestResultDesc2 {
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.recap1Cont {
+  text-align: center;
+  align-items: center;
+  grid-column: span 2;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#recap1 {
+  font-size: clamp(1rem, 1.3vw, 1.3vw);
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.light100Setup {
+  grid-column: span 1;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  /* background-color: #0d0221; */
+}
+
+#light100SetupIm {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.centerOut100 {
+  grid-column: span 1;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  /* background-color: #0d0221; */
+}
+
+.centerOut100 > video {
+  height: auto;
+  width: 100%;
 }

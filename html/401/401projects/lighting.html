@@ -201,7 +201,7 @@
                 The tutorial, however useful, was not helpful for my set of lights. I got the basic prinicple of how to get the adapters on but there was a lot of omitted information about what pins to use on the 
                 Raspberry Pi, or which end was negative, or which end took in data and which end outputted data. It took a bit of work, but I got the idea of how to match what pin on the Pi to to what area on the lights.
                 I then came to the realization that the pins I needed were not magically in a row and I would need some jumper cables to carry the current between the lights and the Pi.<br/><br/>
-                Fast forward 2 days and I now have the Pi wired correctly, or so I thought. I had confused the notation GPIO 18, thinking it meant PHYSCICAL pin 18, it did not.
+                Fast forward 2 days and I now have the Pi wired correctly, or so I thought. I had confused the notation GPIO 18, thinking it meant PHYSICAL pin 18, it did not.
                 After getting the wiring correct (I was able to tell by the lights flashing once when I plugged them in).<br/> I wrote some code.
               </div>
             </div>
@@ -245,8 +245,23 @@
                 tough, or at least they is when you don't know what you are doing. It just so happens that in the process of finding an effective method to represent
                 rotation, I derived the 2 dimensional rotation matrix. That looks something like this:
               </div>
-              <img src="https://latex.codecogs.com/svg.image?\inline&space;\LARGE&space;{\color{White}\begin{bmatrix}x\\y\end{bmatrix}\begin{bmatrix}\cos{\theta}&space;&&space;&space;-\sin{\theta}\\\sin{\theta}&space;&&space;&space;\cos{\theta}\\\end{bmatrix}&space;=&space;\begin{bmatrix}x\prime\\y\prime\end{bmatrix}&space;">
-              <div><br/><br/>Where X and Y are input coordinates and X' and Y' are output coordinates.</div>
+              <a href="https://latex.codecogs.com/" target="_blank" rel="noreferrer noopener"><img src="https://latex.codecogs.com/svg.image?\inline&space;\LARGE&space;{\color{White}\begin{bmatrix}x\\y\end{bmatrix}\begin{bmatrix}\cos{\theta}&space;&&space;&space;-\sin{\theta}\\\sin{\theta}&space;&&space;&space;\cos{\theta}\\\end{bmatrix}&space;=&space;\begin{bmatrix}x\prime\\y\prime\end{bmatrix}&space;"></a>
+              <div>Where X and Y are input coordinates and X' and Y' are output coordinates.</div>
+            </div>
+            <div class="rotationTestResult">
+              <div id="rotationTestResultDesc">Below is the output of the simple test I created to check if my math was correct (I did not know whether my math was correct or not because I had not thought to Google "rotation matrix").</div>
+              <img src="../../../Images/rotationTestResult.png">
+              <div id="rotationTestResultDesc2">And voilà! It worked! This was using an 18 degree rotation.</div>
+            </div>
+            <div class="recap1Cont">
+              <div id="recap1">So, at this point I had 100 lights set up in a horribly precarious situation, I had a method for mapping and describing the geometric relation between the lights, 
+                and I had some cool patterns. Following will be images and videos related to the light setup and the patterns I have created. Please be advised that almost all of the videos so far were taken with my laptop camera that gets terribly overexposed and is only 1280x720.</div>
+            </div>
+            <div class="light100Setup">
+              <img id="light100SetupIm" src="../../../Images/100lightSetup.jpg">
+            </div>
+            <div class="centerOut100">
+              <video controls muted width="800"><source src="../../../Images/adjustedCenter100.webm" type="video/webm"></video>
             </div>
           </div>
         </main>
