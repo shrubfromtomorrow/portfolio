@@ -274,7 +274,20 @@
             </div>
             <div class="montageIntermission1Cont">
               <div id="montageIntermission1">And here we will take a pause. It is worth noting that, as of now, I have 30 recordings of various quality, I only wished to put the highlights in though. 
-                I wanted to stop here to talk about two things, the magic of HSV, and the hardships of rotation. 
+                I wanted to stop here to talk about two things, the magic of HSV, and the hardships of rotation.
+                <br/><br/>
+                I'll start with the big issue I had with rotation.
+              </div>
+            </div>
+            <div class="rotationIssueCont">
+              <div id="rotationIssue">One piece of code I had written involved finding what section of a circle a point lay in. In order to find that, with the x and y coordinates I had, I needed to use arctan. <br/><br/>Using the ratio of opposite over adjacent, I would be able to find the radian measure of 
+                a point about my origin. This works because where tangent takes in an angle value and will return a ratio between two lengths (though what the lengths are is not explicit), the inverse function of tangent (arctangent) takes in a ratio of side lengths and returns an angle measure.
+                The range of these return values is between π/2 and -π/2 and so using some basic if statements I was able to determine which quadrant of the circle the point lay in and I would add π/2 if it was in the second or third. Arctan is shown below.
+                <br/><br/>
+                <img src="https://latex.codecogs.com/svg.image?\color{white}r&space;=&space;\tan^{-1}(\frac{y}{x})">
+                <br/><br/>
+                The issue with this is that the ratio of opposite over adjacent could return undefined. In the situation where the adjacent side, or the x value, is 0, you would have an undefined output. And it just so happens that in my real lighting setup, with my camera of 921,600 pixels, I had a light sitting EXACTLY on the y axis (an x value of 0). 
+                This was extremely difficult to debug as the error only occured on the 8th rotation (144 degrees) and it was on light 270. This is truly fascinating as the likelihood of a light being on the y-axis at any rotation is 720/921,600 or 0.078%. Not to mention that my decimal precision was set to 8, so the value of the adjacent side was less than 0.00000000.
               </div>
             </div>
           </div>
