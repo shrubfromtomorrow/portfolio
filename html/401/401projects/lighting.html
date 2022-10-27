@@ -297,7 +297,27 @@
               <div id="rotationAndSpiral">The whole point of dealing with rotation at all was at the challenge of a friend. After showing them all the things I could do mathematically with the lights, they said I should create a spiral.
                 A spiral came across as pretty daunting but it is actually quite simple.<br/><br/>
                 <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\color{white}r=\theta"><br/><br/>
-                Thats it. Using a different constant in front of theta would allow for a bigger or smaller spiral and that is all I needed.
+                That's it. Using a different constant in front of theta would allow for a bigger or smaller spiral and that is all I needed.
+                <br/><br/>
+                With this, I would calculate a certain number of points, say 50, that would fit perfectly into a spiral shape. I would then use that code written earlier to figure out which lights 
+                were closest to each point, and then I would illuminate them. Once one spiral was illumiated, I would rotate all of the points using the matrix math above and I would get a new spiral.
+                <br/><br/>
+                This feels to me like a dramatic oversimplification, but it really isn't. The principle is quite simple, the execution is another problem.
+              </div>
+            </div>
+            <div class="rotationComputationIssueCont">
+              <div id="rotationComputationIssue">My methods for transferring the data about what lights needed to be lit at this point had been precarious. The first way I did it was by computing all the lights that needed to be on, in
+                order, and then I sent those lights as arguments to the file execution in the command line where they were interpreted on the other side. Bad idea. The main issue with this is that you could only really send one pattern at a time without
+                writing some complex way to parse the light nubmers on the raspberry pi side. There is also some character limit in the shell I use that is somewhere aroun 5000.
+                <br/><br/>
+                After realizing I wanted to do this in a more efficient way. I decided to write an execution program that would send a certain file to the raspberry pi, compute all of the 
+                lights and their coordinates there, and then light them up. This worked ok. However, as I mentioned before, doing the calculations on the raspberry pi is limited and if you are doing something like, say, calculating all of the points
+                on a spiral of a certain size and doing a bunch of trig to find the closest lights, you would have a long pause between animated frames.
+                <br/><br/>
+                The last, and current method, of data transfer comes in the form of precomputation on my computer. Effectively, I do everything I need to, calculation-wise, on my laptop and then I export a 
+                "lightOrder.txt" file that contains a list of lists of lights that would need to be turned on at any given time. I then have a second piece of code that parses the lightOrder however I want.
+                For example, I could write that I wanted to sleep the program for 1 second between frames; I would write a sleep function into the parser each time it reads a list of lights.
+                This removes a lot of strain from the raspberry pi and is just a more stable and structured way of actually lighting the lights.
               </div>
             </div>
           </div>
