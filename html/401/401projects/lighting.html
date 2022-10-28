@@ -306,9 +306,9 @@
               </div>
             </div>
             <div class="rotationComputationIssueCont">
-              <div id="rotationComputationIssue">My methods for transferring the data about what lights needed to be lit at this point had been precarious. The first way I did it was by computing all the lights that needed to be on, in
+              <div id="rotationComputationIssue">My methods for transferring the data regarding the lights that needed to be lit at this point had been precarious. The first way I did it was by computing all the lights that needed to be on, in
                 order, and then I sent those lights as arguments to the file execution in the command line where they were interpreted on the other side. Bad idea. The main issue with this is that you could only really send one pattern at a time without
-                writing some complex way to parse the light nubmers on the raspberry pi side. There is also some character limit in the shell I use that is somewhere aroun 5000.
+                writing some complex way to parse the light nubmers on the raspberry pi side. There is also some character limit in the shell I use that is somewhere around 5000.
                 <br/><br/>
                 After realizing I wanted to do this in a more efficient way. I decided to write an execution program that would send a certain file to the raspberry pi, compute all of the 
                 lights and their coordinates there, and then light them up. This worked ok. However, as I mentioned before, doing the calculations on the raspberry pi is limited and if you are doing something like, say, calculating all of the points
@@ -319,6 +319,9 @@
                 For example, I could write that I wanted to sleep the program for 1 second between frames; I would write a sleep function into the parser each time it reads a list of lights.
                 This removes a lot of strain from the raspberry pi and is just a more stable and structured way of actually lighting the lights.
               </div>
+            </div>
+            <div class="animationExplanationCont">
+              <div id="animationExplanation">I understand that the math can be a bit hard to follow and that likely is due to my explanations through text. So I decided to make a fun animation to show the life of a light in my original spiral program.</div>
             </div>
           </div>
         </main>
