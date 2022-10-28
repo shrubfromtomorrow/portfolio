@@ -323,6 +323,31 @@
             <div class="animationExplanationCont">
               <div id="animationExplanation">I understand that the math can be a bit hard to follow and that likely is due to my explanations through text. So I decided to make a fun animation to show the life of a light in my original spiral program.</div>
             </div>
+            <div></div>
+            <div class="jackCodeCont">
+              <div id="jackCode">
+                When I first made the spiral code, I was calculating each frame on the raspberry pi. Given that it had to do at least 15,000 trig calculations (50 points, 300 lights to check distance), the frames came out really slowly. This was what pushed me to 
+                change the way I sent the data to precalculation with the lightOrder file. However, I wanted it to be faster. The first thing to do here would be to use complex numbers rather than matrix multiplication. Complex numbers are actually so commonly used 
+                to represent rotation that the creators of Python made them a built-in function of the language. The way complex numbers work for rotations best visualized with a picture.<br/><br/>
+                A complex number is denoted by Z = Ai + B. i is the square root of -1. In our normal number system, no number can be squared and equal -1, it just doesn't work. Thinking of the complex plane 
+                as a number line that is perpendicular to our normal number line means that multiplying any number by i will rotate it 90 degrees. If 5 is our starting point, multiplying by i give 5i. Multiplying by 
+                i again give 5i*i and since i is the square root of -1, multiplying i by itself gives -1, and multiplying -1 by 5 give -5. So multiplying by i is equivalent to a 90 degree rotation, but what about a more general formula? Well, this is it:<br/><br/>
+                <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\color{white}(\cos{\theta}&space;&plus;&space;i\sin{\theta})(x&space;&plus;&space;iy)">
+                <br/><br/>
+                This is for θ being the angle by which you would like to rotation a point. This is only applicable for counterclockwise rotation. This code is faster than the 
+                matrix multiplication counterpart as it doesn't need to import another library and it only requires 2 trig functions.<br/>
+                Another way to speed this up is by creating a lookup table for rotational values. For example, if I am rotation by 18 degrees, I could create a lookup table for all the trig functions I would 
+                need to perform. Given that there are only 20 distinct angles, this is very feasible.<br/>
+                The last method of optimization came from a friend who realized that by changing the spiral's starting point angle, all subsequent angles would be rotated already 
+                as the spiral is built off of the last point's position. That code runs way faster and I have added a video of what it looks like.
+              </div>
+            </div>
+            <div class="complexNumbersCont">
+              <img src="../../../Images/complexNumbers.png" id="complexNumbers"></img>
+            </div>
+            <div class="animatedSpiral300Jack">
+              <video controls muted><source src="../../../Images/reverseSpiral300JackCode.webm" type="video/webm"></video>
+            </div>
           </div>
         </main>
       </div>
