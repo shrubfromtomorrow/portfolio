@@ -1175,3 +1175,18 @@ header {
   height: auto;
   width: 100%;
 }
+
+.pixelingSegueCont {
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#pixelingSegue {
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
+  padding: 1rem;
+}
