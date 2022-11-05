@@ -1190,3 +1190,78 @@ header {
   line-height: 1.5;
   padding: 1rem;
 }
+
+.theBoardCont {
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#theBoard {
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.theBoardImCont {
+  grid-column: span 1;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-left: 0.5rem;
+  /* background-color: #0d0221; */
+}
+
+#theBoardIm {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.theBoardRandLightsCont {
+  grid-column: span 1;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  /* background-color: #0d0221; */
+}
+
+#theBoardRandLights {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.crystallineLightsCont {
+  grid-column: span 1;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-left: 0.5rem;
+  /* background-color: #0d0221; */
+}
+
+#crystallineLights {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.boardLightsExplCont {
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#boardLightsExpl {
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
+  padding: 1rem;
+}
