@@ -885,7 +885,7 @@ header {
   text-align: center;
   align-items: center;
   margin: 1rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   border-radius: 2rem;
   background-color: #0d0221;
 }
@@ -989,7 +989,7 @@ header {
   text-align: center;
   align-items: center;
   margin: 1rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   border-radius: 2rem;
   background-color: #0d0221;
 }
@@ -1122,7 +1122,7 @@ header {
   text-align: center;
   align-items: center;
   margin: 1rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   border-radius: 2rem;
   background-color: #0d0221;
 }
@@ -1261,6 +1261,34 @@ header {
 }
 
 #boardLightsExpl {
+  font-size: clamp(0.7rem, 1.1vw, 1.1vw);
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.boardLightingAnim {
+  grid-column: span 1;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-left: 0.5rem;
+  /* background-color: #0d0221; */
+}
+
+.boardLightingAnim > video {
+  height: auto;
+  width: 100%;
+}
+
+.endBoardSegCont {
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  background-color: #0d0221;
+}
+
+#endBoardSeg {
   font-size: clamp(0.7rem, 1.1vw, 1.1vw);
   line-height: 1.5;
   padding: 1rem;

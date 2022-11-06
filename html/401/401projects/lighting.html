@@ -400,7 +400,25 @@
               <div id="boardLightsExpl">The first picture is the board drying, the second is lights when they were just flung and slightly organised on the board (as well as mapped) 
                 and the last picture is of the crystlline lights structure functioning as a laser pointer. The stapling took a while to do and taught 
                 me that the electronics were pretty resilient (I stapled straight through the wire 3 times) and were pretty unlikely to malfunction even when an 
-                unexpected piece of metal was added to the circuit (staple).
+                unexpected piece of metal was added to the circuit (staple). <br/><br/>
+                I figured out pretty quickly when trying to organise the lights that it was not going to be as easy as I had hoped. I wanted all of the power 
+                connectors to be on the same end of the board so that the cable management was easier but this created a lot of difficulty. The lengths of the strings of 
+                lights were just not the right length to go the length of the board an interger number of times. For fun (using a program that I will talk about later) I have created 
+                visualiser for the way that the lights are lain out. There are switchbacks as well as crosses in a couple places but all in all, I think I acheived a pretty 
+                decent density across the board (pun absolutely intended).
+              </div>
+            </div>
+            <div class="boardLightingAnim">
+              <video controls muted><source src="../../../Images/lightPlot.mp4" type="video/mp4"></video>
+            </div>
+            <div class="endBoardSegCont">
+              <div id="endBoardSeg">So with the bit about the board out of the way, I can talk about pixeling. To make something into a display, the first 
+                step is to carve out your pixels. With this setup, it might seem logical to use a light for each pixel, and you would be correct. There is a lack 
+                of detail in certain areas on higher resolution images due to the resolution of my board being around 5√6 (12 ish) by 10√6 (24 ish).<br/><br/> The general 
+                process is such: the image is translated into pixel-by-pixel color values and the lights are sort of "overlayed" onto the image. The lights find 
+                out what color they are supposed to hold based on the pixel they are sitting on and all of that gets shipped off to a final array of lights and 
+                their corresponding colors. If you are playing an animation, the process repeats with each sub array that is full of lights and corresponding colors 
+                being added to a massive array that represents the whole animation. 
               </div>
             </div>
           </div>
