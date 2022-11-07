@@ -413,13 +413,35 @@
             </div>
             <div class="endBoardSegCont">
               <div id="endBoardSeg">So with the bit about the board out of the way, I can talk about pixeling. To make something into a display, the first 
-                step is to carve out your pixels. With this setup, it might seem logical to use a light for each pixel, and you would be correct. There is a lack 
-                of detail in certain areas on higher resolution images due to the resolution of my board being around 5√6 (12 ish) by 10√6 (24 ish).<br/><br/> The general 
+                step is to carve out your pixels. With this setup, it might seem logical to use a single light for each pixel, and you would be correct. There is a lack 
+                of detail in certain areas on higher resolution images due to the resolution of my board being around 5√6 (12 ish) by 10√6 (24 ish) but at this point, 
+                the board's functionality is not as a perfect monitor.<br/><br/> The general pixeling 
                 process is such: the image is translated into pixel-by-pixel color values and the lights are sort of "overlayed" onto the image. The lights find 
                 out what color they are supposed to hold based on the pixel they are sitting on and all of that gets shipped off to a final array of lights and 
                 their corresponding colors. If you are playing an animation, the process repeats with each sub array that is full of lights and corresponding colors 
-                being added to a massive array that represents the whole animation. 
+                being added to a massive array that represents the whole animation. <br/><br/>
+                The code was somewhat difficult to work out but in the end, it ended up being one of the shortest programs I had written for this project. And most 
+                importantly, it works well! Within a certain critera. The lights themselves are not good at displaying brown and they do not have the greatest color 
+                accuracy in general. Here are pieces of pixel art I made being displayed on the lights.
               </div>
+            </div>
+            <div class="lCont">
+              <img src="../../../Images/l.jpg" id="l"></img>
+            </div>
+            <div class="rainbowCont">
+              <img src="../../../Images/rainbow.jpg" id="rainbow"></img>
+            </div>
+            <div class="rainbowTiltedCont">
+              <img src="../../../Images/rainbowTilted.jpg" id="rainbowTilted"></img>
+            </div>
+            <div class="svedanCont">
+              <img src="../../../Images/svedan.jpg" id="svedan"></img>
+            </div>
+            <div class="franceCont">
+              <img src="../../../Images/france.jpg" id="france"></img>
+            </div>
+            <div class="sauronCont">
+              <img src="../../../Images/sauron.jpg" id="sauron"></img>
             </div>
           </div>
         </main>
