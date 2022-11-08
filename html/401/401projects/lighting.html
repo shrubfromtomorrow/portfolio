@@ -443,6 +443,35 @@
             <div class="sauronCont">
               <img src="../../../Images/sauron.jpg" id="sauron"></img>
             </div>
+            <div class="pixelingImagesDescCont">
+              <div id="pixelingImagesDesc">As you can see from the images, when you have some large blocky input images 
+                (flags), you can achieve a very recognisable look. In contrast to this, images with a fair amount 
+                of intricate detail as well as specific levels of empty space (the Eye of Sauron) will leave something to be desired. 
+                There is also a fair amount of stretching on the Eye as the image is in a 1x1 ratio and my code is severly flawed. My code  
+                creates the pixels themselves with ratioed dimensions. This means that all of the "pixels" that I have artifically created 
+                would have dimensions of 1x2. Displays for monitors typically keep all of their pixels in the same aspect ratio as that makes 
+                sense, I did not do that because I wasn't thinking very far ahead.<br/><br/>
+                All in all though, for what this actually is (a really long string of lights), gaining this level of abstraction to 2D is pretty cool 
+                and a sumnation of a whole lot of time and effort.<br/>
+                This is not the conclusion, this is just the endpoint of the major expansions. 
+              </div>
+            </div>
+            <div class="multiDMABufferCont">
+              <div id="multiDMABuffer">The last real part of this project (for now) comes in the form of an optimization. At this point, it was really slow 
+                to get data all the way to the end of the strip of lights (picture to explain). Now, PWM is really fast, but it doesn't really get to shine 
+                when there are microcontrollers that have to stop the data, process it, and pass it on again at every light. They takes AGES (microseconds) to get anything 
+                done, so it seems natural to try to bypass them. My thought was simple, why not use two different data lines to pass information and section the lights 
+                into even parts, that way I can simultaneously pass data into 150-light sections, HALVING the time it takes for the lights to get their information.<br/>
+                Sadly, in the code itself, you have to check whether a light is of a certain index, and that alone is enough to account for the time saved. However, 
+                there are more than just speed improvements to be had here. The lights use a combination of power from an external power supply with the 5 volts supplied 
+                from the raspberry pi's GPIO pins, by separating the lights into two sections, I effectively double the amount of power I can put into the lights, leading 
+                them to be brighter and to flicker less. Also, it means that I can use fewer raspberry pis to control more lights (half as many to be exact).<br/><br/>
+                But the sugarplum fairly land of theory must come to an end. 
+              </div>
+            </div>
+            <div class="dataLineLengthCont">
+              <img src="../../../Images/explanationOfDataLineLength.jpg" id="dataLineLength"></img>
+            </div>
           </div>
         </main>
       </div>
