@@ -472,6 +472,25 @@
             <div class="dataLineLengthCont">
               <img src="../../../Images/explanationOfDataLineLength.jpg" id="dataLineLength"></img>
             </div>
+            <div class="DMAExplCont">
+              <div id="DMAExpl">Here is the issue. When I created the code to split the output into two data lines, something strange happened. Basically, I had the code 
+                to show all of the updated lights on line one run before showing the updated lights on line two (the code runs fast enough that there is 
+                not a noticable delay), but the two outputs overrode the other line. This would cause, say, the bottom 150 lights to update both halves and the 
+                top 150 lights would update both halves as well. It turns out that while the raspberry pi has multiple (5+) dataouts (GPIO pins) that the lights can interpret, 
+                there are only two LINES of output. Basically, GPIO 18 will get the same signal as, say, GPIO 22, but GPIO 23 will have a different signal as GPIO 18.
+                A diagram would be best.<br/><br/>
+                As you can see, there are two different lines that cover multiple output pins (the holes) and they produce individual outputs. Moving the wire vertically 
+                would not change the output thought it would change the pin number, moving horizontally would change the output and the pin number. So, you can only get 
+                2 different outputs on the different lines, great, let's use some different pins and ... it still didn't work. <br/>
+                At this point, it had been a few days (about 5) and I decided to turn to the library that all of this code is written on. The library itself is really just 
+                a massive compilation of C code as C was probably the best language to write code that deals with PWM in. C is illegible, at least for me, as someone who 
+                had, up to this point, dealt exculsively in highly abstracted high-level languages. For this, I had to employ my father. After some small lessons as well as 
+                a doomscroll through the code, we found several hints to the existence of the multi-line functionality.
+              </div>
+            </div>
+            <div class="differentDataLinesCont">
+              <img src="../../../Images/differentDataLines.png" id="differentDataLines"></img>
+            </div>
           </div>
         </main>
       </div>
