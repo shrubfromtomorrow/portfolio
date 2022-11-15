@@ -840,7 +840,50 @@ header {
   object-fit: contain;
 }
 
-.cardGrid {
+.carousel {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.carousel > button {
+  color: #0d0221;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  cursor: pointer;
+  z-index: 2;
+}
+
+.imageGrid {
+  display: grid;
+}
+
+.slide {
+  grid-area: 1 / 2 / span 1 / span 1;
+  opacity: 0;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+/* .cardGrid {
   font-family: "Open Sans";
   user-select: text;
   display: grid;
@@ -883,4 +926,4 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
