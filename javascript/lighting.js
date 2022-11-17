@@ -60,6 +60,7 @@ seniorLinkList.addEventListener("click", () => {
 });
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
+const caption = document.querySelector("#caption");
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     const offest = button.dataset.carouselButton === "next" ? 1 : -1;
@@ -70,6 +71,18 @@ buttons.forEach(button => {
     if (newIndex >= slides.children.length) newIndex = 0;
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
+    if (newIndex == 0) {
+      caption.textContent = "The Setup"
+    }
+    else if (newIndex == 1) {
+      caption.textContent = "Rotation"
+    }
+    else if (newIndex == 2) {
+      caption.textContent = "Pixeling"
+    }
+    else {
+      caption.textContent = "Doubled Lines"
+    }
   })
 })
 
