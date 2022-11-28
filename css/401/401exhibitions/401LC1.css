@@ -614,29 +614,29 @@
   transform: rotate(90deg);
 }
 
-.LC1LinkCont {
-  height: 100%;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.exhibitionGrid {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 9rem;
+  display: grid;
+  font-family: "Montserratsemibold", sans-serif;
 }
 
-#LC1Link {
-  text-decoration: none;
-  text-decoration-color: #0D022100;
-  font-family: "Montserratsemibold",
-    sans-serif;
-  font-size: 4rem;
-  color: #0D0221;
-  transition: all 0.5s ease-in-out;
+.exhibitionGrid>div {
+  background-color: #0D0221;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  line-height: 3ch;
+  color: #FEC9F1;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-#LC1Link:hover,
-#LC1Link:focus {
-  text-decoration-color: #0D0221;
-  text-decoration: underline;
-  text-decoration-thickness: .25rem;
+.left {
+  margin-right: 1rem;
+}
+
+.right {
+  margin-left: 1rem;
 }
 
 
