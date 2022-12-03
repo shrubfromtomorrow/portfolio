@@ -172,8 +172,44 @@
           <div id="advisoryExpl">There isn't much to say here, I talk when I should and when I shouldn't. Any work that
             needs doing I get done.</div>
         </div>
-        <div class="mathHeader">
-
+        <div class="mathHeaderCont">
+          <div id="mathHeader">Math</div>
+        </div>
+        <div class="languageHeaderCont">
+          <div id="languageHeader">Language</div>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="writingHeaderCont">
+          <div id="writingHeader">Writing</div>
+        </div>
+        <div class="competenciesHeaderCont">
+          <div id="competenciesHeader">Competencies</div>
+        </div>
+        <div class="left">
+          <div id="writing">Writing is lacking as of now, the requirements require pieces of writing rather than a
+            certain number of pages. I have around 6 pages but it is all of the same style. Most of my writing is in the
+            form of a technical writeup for my lighting project, I am writing a couple short stories though and I will
+            have a piece of writing on the London tube soon.</div>
+        </div>
+        <div class="rightCompetencies">
+          <img src="../../../Images/competenciesMet.png" id="competencies"></img>
+          <div id="competenciesExpl">Here are my competencies. I am on track to meet the 16 foundational required to
+            graduate. I hope to achieve some advanced competencies by running a c-lab.</div>
+        </div>
+        <div class="capstoneHeaderCont">
+          <div id="capstoneHeader">Capstone</div>
+        </div>
+        <div class="left">
+          <div id="capstoneOverview">
+            My capstone started with me being angry. I had to buy a graphing calculator for the ACT and found the
+            selection limited. Adding to my anger was the quality of the $150 product. The machine was slow, poorly
+            made,
+            seems to have had no user testing, and I have really only used it thrice (programming on it doesn't
+            count).<br />
+            I want to solve this. I want to create an entire calculator. From user interface to hardware, I think I
+            could improve almost everything that Texas Instruments has done or not done.
+          </div>
         </div>
       </div>
     </div>
@@ -182,9 +218,7 @@
     window.onbeforeunload = function () {
       window.scrollTo(0, 0);
     }
-    const menuBtn = document.querySelector(".menubtn");
-    let menuOpen = false;
-    menuBtn.addEventListener("click", () => {
+    const menuBtn = document.querySelector(" .menubtn"); let menuOpen = false; menuBtn.addEventListener("click", () => {
       if (!menuOpen) {
         menuBtn.classList.add("open");
         menuOpen = true;

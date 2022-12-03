@@ -855,7 +855,7 @@ header {
 .carousel {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 8fr;
+  grid-template-rows: 1fr 1fr 8fr;
   position: relative;
   width: 55%;
   height: auto;
@@ -864,14 +864,28 @@ header {
   margin-bottom: 1rem;
 }
 
-.carousel>button {
+.carouselPrev {
   color: #0d0221;
   background: none;
   border: none;
   font-size: 4rem;
-  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-start: 3;
   /* top: 50%;
   transform: translateY(-50%); */
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carouselNext {
+  color: #0d0221;
+  grid-column-start: 3;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  grid-row-start: 3;
+  /* top: 50%;
+    transform: translateY(-50%); */
   cursor: pointer;
   z-index: 2;
 }
@@ -889,9 +903,22 @@ header {
   transition: all 100ms ease-in-out;
 }
 
+#captionCaption {
+  /* background-color: #0d0221; */
+  font-size: 1rem;
+  font-family: "Open Sans";
+  /* color: #fec9f1; */
+  grid-column-start: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  transition: all 100ms ease-in-out;
+}
+
 .imageGrid {
   display: grid;
-  grid-area: 2 / 2 / span 1 / span 1;
+  grid-area: 3 / 2 / span 1 / span 1;
 }
 
 .slide {

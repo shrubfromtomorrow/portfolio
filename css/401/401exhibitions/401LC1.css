@@ -702,6 +702,102 @@
   font-size: 4rem;
 }
 
+.mathHeaderCont {
+  display: flex;
+  justify-content: center;
+  /* grid-column: span 2; */
+  margin: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#mathHeader {
+  color: #fec9f1;
+  padding: 1rem;
+  padding-top: 1.4rem;
+  font-family: "Bebas Neue Bold";
+  font-size: 4rem;
+}
+
+.languageHeaderCont {
+  display: flex;
+  justify-content: center;
+  /* grid-column: span 2; */
+  margin: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#languageHeader {
+  color: #fec9f1;
+  padding: 1rem;
+  padding-top: 1.4rem;
+  font-family: "Bebas Neue Bold";
+  font-size: 4rem;
+}
+
+
+.writingHeaderCont {
+  display: flex;
+  justify-content: center;
+  /* grid-column: span 2; */
+  margin: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#writingHeader {
+  color: #fec9f1;
+  padding: 1rem;
+  padding-top: 1.4rem;
+  font-family: "Bebas Neue Bold";
+  font-size: 4rem;
+}
+
+.competenciesHeaderCont {
+  display: flex;
+  justify-content: center;
+  /* grid-column: span 2; */
+  margin: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#competenciesHeader {
+  color: #fec9f1;
+  padding: 1rem;
+  padding-top: 1.4rem;
+  font-family: "Bebas Neue Bold";
+  font-size: 4rem;
+}
+
+.rightCompetencies {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.capstoneHeaderCont {
+  display: flex;
+  justify-content: center;
+  grid-column: span 2;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#capstoneHeader {
+  color: #fec9f1;
+  padding: 1rem;
+  padding-top: 1.4rem;
+  font-family: "Bebas Neue Bold";
+  font-size: 4rem;
+}
 
 
 
