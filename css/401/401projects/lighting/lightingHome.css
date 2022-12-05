@@ -864,7 +864,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  transition: all 100ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
 .carousel.visible {

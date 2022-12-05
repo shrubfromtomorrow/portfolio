@@ -93,24 +93,22 @@ buttons.forEach(button => {
 
 const carousel = document.querySelector(".carousel");
 
-function isInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+// CHECK LIGHTING ANIMATION COMMITS FOR SCROLL ANIMATION
 
-  );
-}
-
-document.addEventListener("scroll", function () {
-  if (isInViewport(carousel)) {
-    console.log("juan");
-  }
-  else {
-    console.log("juan't");
-  }
-})
+let shown = 0;
+let interval;
+const options = {};
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      shown++;
+      if (shown <= 1) {
+        console.log(entry);
+        carousel.classList.add("visible");
+      }
+    }
+  })
+}, options);
+observer.observe(carousel);
 
 

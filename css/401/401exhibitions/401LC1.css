@@ -652,11 +652,19 @@
 }
 
 .left {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 0.5rem;
 }
 
 .right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
   margin-right: 1rem;
   margin-left: 0.5rem;
 }
@@ -672,7 +680,7 @@
   /* grid-column: span 2; */
   margin: 1rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-right: 0.5rem;
 }
 
@@ -691,7 +699,7 @@
   margin: 1rem;
   margin-left: 0.5rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #advisoryHeader {
@@ -709,7 +717,7 @@
   margin: 1rem;
   margin-right: 0.5rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #mathHeader {
@@ -727,7 +735,7 @@
   margin: 1rem;
   margin-left: 0.5rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #languageHeader {
@@ -746,7 +754,7 @@
   margin: 1rem;
   margin-right: 0.5rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #writingHeader {
@@ -764,7 +772,7 @@
   margin: 1rem;
   margin-left: 0.5rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #competenciesHeader {
@@ -778,8 +786,13 @@
 .rightCompetencies {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  margin-bottom: 1rem;
   margin-right: 1rem;
   margin-left: 0.5rem;
+}
+
+#competencies {
+  border-radius: 1rem;
 }
 
 .capstoneHeaderCont {
@@ -788,7 +801,7 @@
   grid-column: span 2;
   margin: 1rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #capstoneHeader {
@@ -797,6 +810,21 @@
   padding-top: 1.4rem;
   font-family: "Bebas Neue Bold";
   font-size: 4rem;
+}
+
+
+#fireTablet {
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#calculatorRequirements {
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 
