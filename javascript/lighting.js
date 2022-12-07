@@ -75,18 +75,22 @@ buttons.forEach(button => {
     if (newIndex == 0) {
       captionCaption.textContent = "The general setup to the project and small bit of code.";
       caption.textContent = "The Setup";
+      caption.href = "theSetup.html"
     }
     else if (newIndex == 1) {
       captionCaption.textContent = "An explanation of the math involved for rotation.";
       caption.textContent = "Rotation";
+      caption.href = "rotation.html"
     }
     else if (newIndex == 2) {
       captionCaption.textContent = "Turning the lights into a display.";
       caption.textContent = "Pixeling";
+      caption.href = "pixeling.html"
     }
     else {
       captionCaption.textContent = "Making an improvement to the data throughput on the lights.";
       caption.textContent = "Doubled Lines";
+      caption.href = "doubleLines.html"
     }
   })
 })
@@ -97,7 +101,7 @@ const carousel = document.querySelector(".carousel");
 
 let shown = 0;
 let interval;
-const options = {};
+const options = { threshold: 0.25 };
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {

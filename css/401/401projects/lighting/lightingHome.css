@@ -856,7 +856,7 @@ header {
   opacity: 0;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: .5fr 1fr 10fr;
+  grid-template-rows: .5fr .5fr .5fr 7.5fr;
   position: relative;
   width: 55%;
   height: auto;
@@ -873,7 +873,7 @@ header {
 
 .buttonCont {
   grid-column-start: 1;
-  grid-row-start: 3;
+  grid-row-start: 4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -881,7 +881,7 @@ header {
 
 .buttonCont1 {
   grid-column-start: 3;
-  grid-row-start: 3;
+  grid-row-start: 4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -938,6 +938,8 @@ header {
 }
 
 #caption {
+  color: #0d0221;
+  text-decoration: none;
   /* background-color: #0d0221; */
   font-size: 4rem;
   font-family: "Bebas Neue Bold";
@@ -948,6 +950,24 @@ header {
   display: flex;
   text-align: center;
   transition: all 100ms ease-in-out;
+}
+
+.hint {
+  /* background-color: #0d0221; */
+  font-size: .75rem;
+  font-family: "Open Sans";
+  /* color: #fec9f1; */
+  grid-column-start: 2;
+  grid-row-start: 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  transition: all 100ms ease-in-out;
+}
+
+#caption:hover {
+  text-decoration: underline;
 }
 
 #captionCaption {
@@ -965,11 +985,11 @@ header {
 
 .imageGrid {
   display: grid;
-  grid-area: 3 / 2 / span 1 / span 1;
+  grid-area: 4 / 2 / span 1 / span 1;
 }
 
 .slide {
-  grid-area: 1 / 2 / span 1 / span 1;
+  grid-area: 2 / 2 / span 1 / span 1;
   opacity: 0;
   z-index: -1;
   transition: 100ms opacity ease-in-out;
