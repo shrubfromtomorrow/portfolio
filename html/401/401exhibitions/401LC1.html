@@ -178,8 +178,8 @@
         <div class="languageHeaderCont">
           <div id="languageHeader">Language</div>
         </div>
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="left"> <img src="../../../Images/calc.png" id="math"></img></div>
+        <div class="right"> <img src="../../../Images/language.png" id="language"></img></div>
         <div class="writingHeaderCont">
           <div id="writingHeader">Writing</div>
         </div>
@@ -958,6 +958,32 @@
         vertPlussen.style.opacity = "1";
       }
     });
+
+
+    const options = { threshold: 0.10 };
+
+    let observer = new IntersectionObserver(function (entries) {
+      console.log(entries);
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          console.log(window.getComputedStyle(entry.target).opacity);
+        }
+      });
+    }, options);
+
+    const exhibitionGrid = document.querySelector(".exhibitionGrid");
+    const lightingGrid = document.querySelector(".theCode");
+    const children1 = exhibitionGrid.children;
+    const children2 = lightingGrid.children;
+
+    for (var i = 0; i < children1.length; i++) {
+      observer.observe(children1[i]);
+    }
+    for (var i = 0; i < children2.length; i++) {
+      observer.observe(children2[i]);
+    }
+
   </script>
 </body>
 

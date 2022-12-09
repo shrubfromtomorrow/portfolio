@@ -687,6 +687,7 @@ header {
 #mainBody1>a {
   text-decoration: none;
   transition: all 0.5s ease;
+  color: #fec9f1;
 }
 
 #mainBody1>a:link:hover {
@@ -986,6 +987,7 @@ header {
 .imageGrid {
   display: grid;
   grid-area: 4 / 2 / span 1 / span 1;
+  transition: all 100ms ease-in-out;
 }
 
 .slide {
@@ -993,7 +995,7 @@ header {
   opacity: 0;
   z-index: -1;
   transition: all 100ms ease-in-out;
-  transition-delay: 100ms;
+  /* transition-delay: 100ms; */
 }
 
 .slide>a>img {
