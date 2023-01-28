@@ -856,10 +856,10 @@ header {
 #imageGrid {
   row-gap: 1rem;
   column-gap: 1rem;
-  margin: 5rem;
+  margin: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
 }
 
 .imageCont {
@@ -871,7 +871,7 @@ header {
 }
 
 .imageCont>img {
-  width: 50%;
+  width: 40%;
   height: 100%;
   object-fit: cover;
 }
@@ -891,6 +891,11 @@ header {
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#gridTextCont>div {
+  line-height: 1.5;
+  text-align: center;
 }
 
 #gridTextCont>span {
